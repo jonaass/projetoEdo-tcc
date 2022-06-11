@@ -1,0 +1,187 @@
+.sombra {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(90deg, #252048 50%, #ffffff 50%);
+  box-shadow: 0px 4px 250px rgba(0, 0, 0, 0.25);
+}
+
+.principal {
+  width: 130vh;
+  height: 90vh;
+  background: linear-gradient(90deg, #252048 50%, #ffffff 50%);
+  box-shadow: 0px 4px 250px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(500px);
+  display: flex;
+  flex-direction: row;
+}
+
+.sec {
+  display: flex;
+  flex-direction: row;
+  width: 75em;
+  height: 47em;
+  margin-top: 50px;
+  align-self: center;
+}
+
+.logo {
+    height: auto;
+    width: 31em;
+    align-self: center;
+}
+
+.container-esquerda {
+    display: flex;
+    width: 37em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: "font1";
+    font-size: 40px;
+    align-self: center;
+    color: #fff;
+}
+
+.container-direita {
+    width: 37em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.area-restrita{
+    color: #000000;
+    font-family: 'roboto';
+    font-size: 38px;
+    text-align: center;
+}
+
+.input{
+    width: 28em;
+    height: 45px;
+    background-color: #F5F6FA;
+    border: 0px;
+}
+
+.esqueceu{
+    color: #B5B4B4;
+    width: 23em;
+}
+
+.button {
+    width: 13em;
+    height: 45px;
+    background: #252048;
+    font-family: "font3";
+    color: #ffffff;
+}
+
+.botao{
+    width: 100%;
+    height: 100%;
+    background-color: #252048;
+    color: white;
+    font-size: 19px;
+}
+
+.f1 {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 10px;
+  height: 30vh;
+}
+
+.image-container {
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.image-container img {
+  height: 100%;
+}
+
+.text1 {
+  font-family: "font3";
+  font-size: 50px;
+  line-height: 9px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 1.5em;
+  margin-top: 2em;
+}
+
+.f2 {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.text2 {
+  font-family: "font2";
+
+  font-size: 50px;
+  align-self: flex-end;
+  text-align: center;
+  color: #000000;
+  margin-right: 2em;
+  margin-top: -50px;
+}
+
+.login {
+  width: 100px;
+  height: 100px;
+  margin-left: 800px;
+  margin-top: 30px;
+}
+
+.password {
+  width: 100px;
+  height: 100px;
+  margin-left: 800px;
+  margin-top: 30px;
+}
+
+
+
+.text3 {
+  font-family: "font1";
+  font-size: 12px;
+  margin-left: 800px;
+  margin-top: -50px;
+}
+
+.text3 a {
+  text-decoration: none;
+  color: #b5b4b4;
+}
+
+.text4 {
+  font-family: "font1";
+  font-size: 12px;
+  margin-left: 800px;
+  margin-top: -50px;
+}
+
+.text4 a {
+  text-decoration: none;
+  color: #b5b4b4;
+}
+
+
+.invalido{
+  display: flex;
+  justify-content: center;
+  color: #ff4931;
+  letter-spacing: 1px;
+  position: relative;
+  top: 40px;
+  height: 50px;
+}

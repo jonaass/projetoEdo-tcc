@@ -1,0 +1,73 @@
+main{
+    background-color: #252048;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+    
+
+    
+.primeiro{
+    text-align: center;
+    height: 40em;
+    width: 38em;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.seta{
+    align-self: flex-start;
+    width: 5em;
+}
+    
+a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.b1{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #252048;
+}
+
+.b2{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #252048;
+}
+    
+.Serviço{
+    font-family: "Roboto3";
+    width: 13em;
+    align-self: center;
+    margin: -25px;
+}
+    
+.Agendar{
+    font-family: "Inter";
+    background-color: #252048;
+    width: 20em;
+    height: 6em;
+    align-self:center;
+}
+    
+.Consulta{
+    font-family: "Inter";
+    background-color: #252048;
+    width: 20em;
+    height: 6em;
+    align-self:center;
+    margin-bottom: 40px;
+}
+
+.img-1{
+    height: 40px;   
+}

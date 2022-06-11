@@ -1,0 +1,363 @@
+.cabeçalho {
+    background-color: #252048;
+    width: 100%;
+    height: 121px;
+    padding-top: 10px;
+}
+
+.texto-cabeçalho {
+    font-family: 'font3';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    height: 6em;
+}
+
+.detalhes{
+    color: white;
+}
+
+.text-cabeçalho {
+    font-family: "font3";
+    display: flex;
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+}
+.carro.css {
+    height: 10px;
+    width: 3px;
+    margin-bottom: 10px;
+}
+.carro {
+    width: 150px;
+    height: 70px;
+    margin-bottom: 40px;
+}
+
+.faixa1 {
+    height: 35em;
+    
+    
+}
+
+.faixa1-imagem {
+    background-image: url(https://neycostaautocenter.com.br/wp-content/uploads/2019/12/funilaria-scaled.jpg);
+    height: 35em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.faixa1-texto {
+    background-color: #252048;
+    width: 22em;
+    height: 14em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    border-radius: 36px;
+    margin-right: 50px;
+}
+
+.faixa1-texto1 {
+    font-family: "font4";
+    width: 11em;
+    color: white;
+    font-size: 25px;
+    padding-left: 17px;
+    margin-bottom:5px;
+}
+
+.faixa1-texto2{
+    font-family: "font4";
+    width: 11em;
+    color: white;
+    font-size: 25px;
+    padding-left: 17px;
+    margin-bottom: 5px;
+}
+
+.faixa1-texto3{
+    font-family: "font4";
+    width: 11em;
+    color: white;
+    font-size: 25px;
+    padding-left: 17px;
+}
+
+.faixa2 {
+    height: 33em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+
+}
+
+.bloco1 {
+    width: 330px;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+.bloco2 {
+    background-image: url('../../../public/images/img2.jpg');
+    width: 35em;
+    height: 30em;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    border-radius: 20px;
+    margin-right: -80px;
+}
+
+.f2-textos{
+    display: flex;
+    flex-direction: column;
+    height: 26em;
+}
+
+.faixa2-texto1{
+    font-family: 'font3';
+    font-size: 53px;
+    width: 10em;
+}
+
+.faixa2-texto2{
+    font-family: "font2";
+    font-size: 25px;
+    width: 17em;
+}
+
+.faixa3 {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    background-color: #252048;
+    color: white;
+}
+
+.bloco3 {
+    background-image: url('../../../public/images/img3.jpg');
+    width: 35em;
+    height: 27.99em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 26px;
+}
+
+.bloco4 {
+    width: 37em;
+    height: 29em;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco4-titulo {
+    font-family: "font3";
+    font-size: 34px;
+    width: 16em;
+}
+
+.bloco4-texto{
+    font-family: "font2";
+    font-size: 28px;
+    width: 12em;
+}
+
+.faixa4 {
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+    background-color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+}
+
+.div1, .div2 ,.div3 {
+    text-align: center;
+}
+
+.img-div1 {
+    height: 8em;
+    background-color: #252048;
+    border-radius: 120px;
+    width: 8em;
+    padding: 29px;
+}
+
+.text-div1, .text-div2, .text-div3 {
+    font-family: "font3";
+    color: black;
+    width: 208px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.faixa5 {
+    background-color: #252048;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.texto-faixa5 {
+    font-size: 27px;
+    text-align: left;
+    width: 399px;
+}
+
+.titulo5 {
+    font-family: "font3";
+    font-size: 57px;
+}
+
+.texto5 {
+    font-family: 'font2';
+    font-size: 25px;
+    width: 18em;
+}
+
+.img-faixa5 {
+    width: 32em;
+    height: 23em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.imagem-5 {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.img-5{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.img-f5{
+    width: 32em;
+    height: 23em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.imagem-6{
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+}
+
+.faixa6 {
+    background-color: white;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.faixa7 {
+    background-color: #252048;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.faixa8 {
+    background-color: white;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rodape {
+    background-color: #252048;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.bloco1-rodape {
+    display: flex;
+    flex-direction: column;
+    background-color: #161233;
+    width: 450px;
+    align-items: center;
+    height: 25em;
+}
+
+.carro1 {
+    width: 150px;
+    height: 70px;
+}
+
+.bloco2-rodape {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco2-img {
+    width: 23em;
+    height: 15em;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+}
+
+.icone-contato {
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+    margin-top: 25px;
+}
+
+.titulo-rodapé{
+    font-family: 'font4';
+    font-size: 30px;
+}
+
+.contato-rodapé{
+    font-family: 'font4';
+    font-size: 30px;
+}
+
+.midia-rodapé{
+    font-family: "font4";
+    font-size: 20px;
+    margin-top: 24px;
+}
+
+.titulo-mapa{
+    font-family: 'font4';
+}

@@ -1,0 +1,108 @@
+.pai{
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        background-color: #252048;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cab{
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffff;
+        width: 50em;
+        height: 6em;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1{
+        font-family: 'inter-Bold';
+        font-size: 20px;
+    }
+    
+    label{
+        font-family: 'inter-Semibold';
+        font-size: 15px;
+        color: #ffffff;
+    
+    }
+    
+    .f1{
+        display: flex;
+        flex-direction: column;
+        width: 50em;
+    }
+    
+    .p1{
+        display: flex;
+        flex-direction: row;;
+    }
+    
+    .imp{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 6px;
+    }
+    
+    h2{
+        font-family: 'inter-Semibold';
+        font-size: 15px;
+        color: #ffffff;
+        margin: 0px 6px;
+    }
+    
+    .txtarea{
+        margin: 0px 20px;
+        height: 8em;
+        width: 18em;
+    }
+    
+    .imp2{
+        margin:0px 20px;
+    }
+    
+    .but{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 81px;
+    }
+    
+    button{
+        font-family: 'inter-Semibold';
+        font-size: 15px;
+    }
+    
+    div{
+        margin: 5px 0px;
+    }
+    
+    .pos1{
+        width:22em ;
+    }
+    
+    .pos2{
+        width: 30em;
+    }
+    .pos3{
+        width: 12em;
+    }
+    .pos4{
+        width: 24em;
+    }
+    .pos5{
+        height: 2em;
+    }
+    .img-1{
+    margin-left: -300px;
+    
+    
+    }
+
+}
