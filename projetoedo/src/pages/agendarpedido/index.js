@@ -1,137 +1,188 @@
-import'./index.scss';
+import './index.scss';
+import Rota from '../../components/rota'
+import { cadastrarPedido, alterarPedido } from '../../api/pedidoApi'
 
-import { Link } from 'react-router-dom';
+
+import { useState } from 'react';
+import { toast } from 'react-toastify';
+
+
 
 export default function Agendar() {
+    const [cliente, setCliente] = useState('');
+    const [endereco, setEndereco] = useState('');
+    const [atendimento, setAtendimento] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [carro, setCarro] = useState('');
+    const [anoCarro, setAnoCarro] = useState('');
+    const [placa, setPlaca] = useState('');
+    const [problema, setProblema] = useState('');
+    const [pecas, setPecas] = useState('');
+    const [orcamento, setorcamento] = useState('');
+    const [id, setId] = useState(0);
 
-    return(
-   
+
+
+    async function salvarClick() {
+        try {
+ 
+            if (id === 0) {
+                const novoPedido= await cadastrarPedido(cliente, endereco, atendimento, telefone, carro, anoCarro, placa, problema, pecas, orcamento,);
+                
+                setId(novoPedido.id);
+                toast.dark('🚀pedido cadastrado com sucesso');
+            }
+            else{
+               await alterarPedido(id, cliente, endereco, atendimento, telefone, carro, anoCarro, placa, problema, pecas, orcamento,);
+               toast.dark('🚀pedido alterado com sucesso');
+            }
+            
+
+           
+        }
+        catch (err) {
+            toast.error(err.response.data.erro);
+
+        }
+    }
+
+   function novoClick() {
+    setId(0);
+    setCliente('');
+    setEndereco('');
+    setAtendimento('');
+    setTelefone('');
+    setCarro('');
+    setAnoCarro('');
+    setPlaca('');
+    setProblema('');
+    setPecas('');
+    setorcamento('');
+
+   }
+
+
+    return (
+
         <main className='pai'>
 
-<body>
-    <main className='main'>
 
-        <header className='cab'>
-         
-         <a href="../menu"> <img src="./images/66822.png" width="20" height="20" className='img-1' /></a>
-            <h1>Agendar Pedido</h1>
+            <body>
+                <main className='main'>
+                    <Rota />
 
-        </header>
+                    <header className='cab'>
 
-        <section className='f1'>
+                        <a href="../menu"> <img src="./images/66822.png" width="20" height="20" className='img-1' /></a>
+                        <h1>Agendar Pedido</h1>
 
-            <div className='p1'>
-                <div className='imp , pos1'>
-                    <label for="">
-                        Nome : 
-                    </label>
-                    <input type="text"/>
-                </div>
+                    </header>
 
-                <div className='imp , pos2'>
-                    <label for="">
-                        Telefone :
-                    </label>
-                    <input type="text"/>
-                </div>
+                    <section className='f1'>
+
+                        <div className='p1'>
+                            <div className='imp , pos1'>
+                                <label for="">
+                                    Nome :
+                                </label>
+                                <input type="text" value={cliente} onChange={e => setCliente(e.target.value)} />
+                            </div>
+
+                            <div className='imp , pos2'>
+                                <label for="">
+                                    Telefone :
+                                </label>
+                                <input type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
+                            </div>
 
 
-            </div>
+                        </div>
 
-            <div>
+                        <div>
 
-                <div className='imp'>
-                    <label for="">
-                        Endereço :
-                    </label>
-                    <input type="text"/>
-                </div>                
+                            <div className='imp'>
+                                <label for="">
+                                    Endereço :
+                                </label>
+                                <input type="text" value={endereco} onChange={e => setEndereco(e.target.value)} />
+                            </div>
 
-            </div>
+                        </div>
 
-            <div className='p1'>
+                        <div className='p1'>
 
-                <div className='imp , pos3'>
-                    <label for="">
-                        Veículo : 
-                    </label>
-                    <input type="text"/>
-                </div>
+                            <div className='imp , pos3'>
+                                <label for="">
+                                    Veículo :
+                                </label>
+                                <input type="text" value={carro} onChange={e => setCarro(e.target.value)} />
+                            </div>
 
-                <div className='imp , pos3'>
-                    <label for="">
-                        Ano :
-                    </label>
-                    <input type="text"/>
-                </div>
+                            <div className='imp , pos3'>
+                                <label for="">
+                                    Ano :
+                                </label>
+                                <input type="date" value={anoCarro} onChange={e => setAnoCarro(e.target.value)} />
+                            </div>
 
-                <div className='imp , pos3'>
-                    <label for="">
-                        Placa :
-                    </label>
-                    <input type="text"/>
-                </div>
+                            <div className='imp , pos3'>
+                                <label for="">
+                                    Placa :
+                                </label>
+                                <input type="text" value={placa} onChange={e => setPlaca(e.target.value)} />
+                            </div>
 
-                <div className='imp , pos3'>
-                    <label for="">
-                        Data :
-                    </label>
-                    <input type="text"/>
-                </div>
+                            <div className='imp , pos3'>
+                                <label for="">
+                                    Data :
+                                </label>
+                                <input type="date" value={atendimento} onChange={e => setAtendimento(e.target.value)} />
+                            </div>
 
-            </div>
+                        </div>
 
-            <div>
 
-                <div className='p1'>
-                    <h2>
-                        Horário : 
-                    </h2>
-                    <input type="text"/>
-                </div>
+                        <div className='p1'>
 
-            </div>
+                            <div className='imp'>
+                                <label className='imp2' for="">
+                                    Descrição do serviço :
+                                </label>
+                                <textarea className='txtarea , pos4' value={problema} onChange={e => setProblema(e.target.value)} />
+                            </div>
 
-            <div className='p1'>
+                            <div className='imp'>
+                                <label className='imp2' for="">
+                                    Peças :
+                                </label>
+                                <textarea className='txtarea' value={pecas} onChange={e => setPecas(e.target.value)} />
+                            </div>
 
-                <div className='imp'>
-                    <label className='imp2' for="">
-                        Descrição do serviço :
-                    </label>
-                    <textarea className='txtarea , pos4'></textarea>
-                </div>
+                        </div>
 
-                <div className='imp'>
-                    <label className='imp2' for="">
-                        Peças :
-                    </label>
-                    <textarea className='txtarea'></textarea>
-                </div>
+                        <div >
 
-            </div>
+                            <div className='p1'>
+                                <h2>
+                                    Total :
+                                </h2>
+                                <input className='pos5' type="text" value={orcamento} onChange={e => setorcamento(e.target.value)} />
+                            </div>
 
-            <div >
+                        </div>
 
-                <div className='p1'>
-                    <h2>
-                        Total :
-                    </h2>
-                    <input className='pos5' type="text"/>
-                </div>
+                        <div className='but'>
+                            
+                            <button onClick={salvarClick} > {id === 0 ? 'Salvar' : 'Alterar'}</button> &nbsp; &nbsp;  
+                        
+                            <button onClick={novoClick}>Novo</button>
 
-            </div>
+                        </div>
 
-            <div className='but'>
+                    </section>
+                </main>
 
-                <a href="../../../pagina da consulta/src/pages/home/index.html">
-                    <button >salvar</button>
-                </a>
-            </div>
-
-        </section>
-    </main>
-    
-</body>
+            </body>
 
 
         </main>
@@ -139,5 +190,5 @@ export default function Agendar() {
 
 
     );
-    
+
 }
