@@ -98,5 +98,26 @@ export async function BuscaPorCliente(nome) {
     return linhas;
 }
 
+export async function PedidosPorId(id) {
+    const comando =
+    `
+    select 
+    id_pedido           id,
+    nm_cliente          nome,
+    ds_endereco		    endereco,
+    dt_atendimento		atendimento,
+    ds_telefone		    telefone,
+    nm_carro		    Carro,
+    dt_anoCarro		    anoCarro,
+    ds_placa		    placa,
+    ds_problema		    problema,
+    ds_pecas		    pecas,
+    vl_orcamento	    orcamento
+    from tb_pedido
+    WHERE id_pedido = ?`;
+    
+    const [linhas] = await con.query(comando, [id]);
+    return linhas[0];
+}
 
 

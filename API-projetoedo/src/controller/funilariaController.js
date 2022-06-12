@@ -1,6 +1,5 @@
-import { AlterarPedido, inserirPedido, TodosPedidos ,RemoverPedido, BuscaPorCliente} from '../Repository/funilariaRepository.js'
+import { AlterarPedido, inserirPedido, TodosPedidos ,RemoverPedido, BuscaPorCliente, PedidosPorId} from '../Repository/funilariaRepository.js'
 
-import multer from 'multer'
 import { Router } from 'express'
 
 
@@ -85,6 +84,23 @@ server.get('/pedidos/busca' , async (req ,resp) =>{
 })
 
 
+server.get('/pedidos/:id' ,async (req, resp) =>{
+    try {
+        const id  = Number( req.params.id );
+        const resposta = await PedidosPorId(id);
+        if (!resposta) 
+            throw new Error('pedido não encrontrado.');
+        
+
+        resp.send(resposta);
+    } 
+    catch (err) {
+        resp.status(400).send({
+            erro: err.message
+        })
+    }
+} )
+
 
 server.get('/pedidos' ,async (req, resp) =>{
     try {
@@ -102,10 +118,13 @@ server.delete('/pedidos/:id', async (req,resp) =>{
     try {
         const { id } = req.params;
         const resposta = await RemoverPedido(id);
-       if (resposta != 1) {
-        throw new Error('pedido não pode serremovido')
-       }
-        resp.status(206).send(resposta);
+       if (resposta != 1) 
+        throw new Error('pedido não pode ser removido')
+       
+        resp.status(206).send({
+            resposta:"Pedido removido"
+        });
+       
     } 
     catch (err) {
         resp.status(400).send({

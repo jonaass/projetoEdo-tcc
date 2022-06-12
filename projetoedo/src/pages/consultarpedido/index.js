@@ -35,7 +35,7 @@ export default function Index() {
                     else{
                        filtrar();
                     }
-                    toast.dark('🚀 pedido removido');
+                    toast.dark('❤️ pedido removido');
                  }
             },
             {
@@ -87,6 +87,7 @@ return(
 
         <div className="tabela">
             <table>
+                <thead>
                 <tr>
                     <th>endereço</th>
                     <th>nome</th>
@@ -94,9 +95,11 @@ return(
                     <th>veiculo</th>
                     <th>ações</th>
                 </tr>
-                     
-                 {pedidos.map(item =>
-                    <tr>
+                </thead>
+
+                    <tbody> 
+                     {pedidos.map(item =>
+                        <tr>
                       <td>{item.endereco}</td>
                       <td>{item.nome}</td>
                       <td>{item.atendimento.substr(0, 10)}</td>
@@ -106,12 +109,12 @@ return(
                           &nbsp; &nbsp; &nbsp;
                           <img src='./images/cross-free-icon-font (1).png' className='x'alt='remover' onClick={() => RemoverPedido(item.id, item.nome)}  />
                       </td>
-                  </tr>
+                        </tr>
   
                     
-                )}
+                 )}
 
-              
+                </tbody> 
 
             </table>
         </div>

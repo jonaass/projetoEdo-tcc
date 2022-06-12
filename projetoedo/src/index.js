@@ -28,7 +28,7 @@ root.render(
       <Route path='/menu' element={<Menu />} />
       <Route path='/consultarpedido' element={<Consultarpedidos />} />
       <Route path='/agendarpedido' element={<Agendar />} />
-      <Route path='/agendarpedido/alterar/:idparam' element={<Agendar />} />
+      <Route path='/agendarpedido/alterar/:idParam' element={<Agendar />} />
       
     </Routes>
     </BrowserRouter>

@@ -6,9 +6,9 @@ const api = axios.create({
 
 export async function cadastrarPedido(cliente, endereco, atendimento,telefone, carro, anoCarro, placa, problema, pecas, orcamento) {
     const resposta =  await api.post('/pedido' ,{
-        cliente: cliente ,
+        cliente: cliente,
         endereco:endereco,
-        atendimento:atendimento ,
+        atendimento:atendimento,
         telefone: telefone,
         carro:carro,
         anoCarro:anoCarro,

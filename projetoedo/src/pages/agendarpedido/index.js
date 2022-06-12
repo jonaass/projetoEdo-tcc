@@ -6,12 +6,12 @@ import { cadastrarPedido, alterarPedido, BuscarPorId } from '../../api/pedidoApi
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
-import { set } from 'local-storage';
 
 
 
-export default function Agendar() {
-    const [cliente, setCliente] = useState();
+
+export default function Index() {
+    const [cliente, setCliente] = useState('');
     const [endereco, setEndereco] = useState('');
     const [atendimento, setAtendimento] = useState('');
     const [telefone, setTelefone] = useState('');
@@ -23,21 +23,21 @@ export default function Agendar() {
     const [orcamento, setorcamento] = useState('');
     const [id, setId] = useState(0);
 
-    const { idparam } = useParams();
+    const { idParam } = useParams();
 
     useEffect(() => {
-        if (idparam) {
+        if (idParam) {
             CarregarPedido();
         }
     }, [])
 
     async function CarregarPedido() {
-        const resposta = await BuscarPorId(idparam);
-        setCliente(resposta.cliente);
+        const resposta = await BuscarPorId(idParam);
+        setCliente(resposta.nome);
         setEndereco(resposta.endereco);
         setAtendimento(resposta.atendimento.substr(0, 10));
         setTelefone(resposta.telefone);
-        setCarro(resposta.carro);
+        setCarro(resposta.Carro);
         setAnoCarro(resposta.anoCarro.substr(0, 10));
         setPlaca(resposta.placa);
         setProblema(resposta.problema);
@@ -53,11 +53,11 @@ export default function Agendar() {
                 const novoPedido= await cadastrarPedido(cliente, endereco, atendimento, telefone, carro, anoCarro, placa, problema, pecas, orcamento,);
                 
                 setId(novoPedido.id);
-                toast.dark('🚀pedido cadastrado com sucesso');
+                toast.dark('❤️pedido cadastrado com sucesso');
             }
             else{
                await alterarPedido(id, cliente, endereco, atendimento, telefone, carro, anoCarro, placa, problema, pecas, orcamento,);
-               toast.dark('🚀pedido alterado com sucesso');
+               toast.dark('❤️pedido alterado com sucesso');
             }
             
 
@@ -96,7 +96,7 @@ export default function Agendar() {
 
                     <header className='cab'>
 
-                        <a href="../menu"> <img src="./images/66822.png" width="20" height="20" className='img-1' /></a>
+                        <a href="../menu"> <img src='/images/66822.png' width="30" height="30" className='img-1' /></a>
                         <h1>Agendar Pedido</h1>
 
                     </header>
