@@ -1,0 +1,1 @@
+nao mudei quase nada so consertei o erro que tava dando de flex-end e coloquei as fontes mas elas nao tao pegando 
