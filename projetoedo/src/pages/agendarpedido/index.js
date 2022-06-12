@@ -96,7 +96,7 @@ export default function Index() {
 
                     <header className='cab'>
 
-                        <a href="../menu"> <img src='/images/66822.png' width="30" height="30" className='img-1' /></a>
+                        <a href="/menu"> <img src='/images/66822.png' width="30" height="30" className='img-1' /></a>
                         <h1>Agendar Pedido</h1>
 
                     </header>
