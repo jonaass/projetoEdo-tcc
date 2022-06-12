@@ -70,7 +70,7 @@
     .but{
         display: flex;
         flex-direction: row;
-        justify-content: end;
+        justify-content: flex-end;
         padding-right: 81px;
     }
     
@@ -86,7 +86,7 @@
         width: 53px;
     }
     
-    div{
+     div{
         margin: 5px 0px;
     }
     

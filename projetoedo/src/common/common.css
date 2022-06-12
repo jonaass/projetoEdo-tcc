@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'font1';
-    src: url('../assets/fonts/Roboto-Light.ttf');
+    src: url('/Roboto-Light.ttf');
 }
 
 @font-face {
     font-family: 'font2' ;
-    src: url('../assets/fonts/Roboto-Medium.ttf');
+    src: url('/Roboto-Medium.ttf');
 }
 
 @font-face {
     font-family: 'font3' ;
-    src: url('../assets/fonts/Roboto-Bold.ttf');
+    src: url('/Roboto-Bold.ttf');
 }
 
 @font-face {
     font-family: 'font4' ;
-    src: url('../assets/fonts/Recursive_Monospace-ExtraBold.ttf');
+    src: url('/Recursive_Monospace-ExtraBold.ttf');
 }
 * {
     box-sizing: border-box;

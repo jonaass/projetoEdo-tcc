@@ -68,7 +68,7 @@ return(
 
                     <h3 className="area-restrita"> Área Restrita <br/> Login </h3>
 
-                    <input type="text" id="imputUsuario" placeholder="Usuário" required="required" autofocus="autofocus" className="input" value={nome} onChange={e => setNome(e.target.value) }/>
+                    <input type="text" id="imputUsuario" placeholder="Usuário" required="required"  autofocus="autofocus" className="input" value={nome} onChange={e => setNome(e.target.value) }/>
 
                     <p className="esqueceu"> Esqueceu seu nome de usuário? </p>
 
