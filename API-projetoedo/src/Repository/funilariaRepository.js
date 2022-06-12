@@ -75,6 +75,28 @@ return resposta.affectedRows;
 
 }
 
-//pedido.id = resposta.insertId;
-//return pedido;
+
+export async function BuscaPorCliente(nome) {
+    const comando =
+    `
+    select 
+    id_pedido           id,
+    nm_cliente          nome,
+    ds_endereco		    endereco,
+    dt_atendimento		atendimento,
+    ds_telefone		    telefone,
+    nm_carro		    Carro,
+    dt_anoCarro		    anoCarro,
+    ds_placa		    placa,
+    ds_problema		    problema,
+    ds_pecas		    pecas,
+    vl_orcamento	    orcamento
+    from tb_pedido 
+    where nm_cliente like ?`
+    
+    const [linhas] = await con.query(comando, [`%${nome}%`]);
+    return linhas;
+}
+
+
 

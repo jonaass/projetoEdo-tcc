@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'react-toastify/dist/ReactToastify.css'; 
 import { ToastContainer} from 'react-toastify';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 import { BrowserRouter , Routes ,Route } from 'react-router-dom';
 
@@ -27,6 +28,7 @@ root.render(
       <Route path='/menu' element={<Menu />} />
       <Route path='/consultarpedido' element={<Consultarpedidos />} />
       <Route path='/agendarpedido' element={<Agendar />} />
+      <Route path='/agendarpedido/alterar/:idparam' element={<Agendar />} />
       
     </Routes>
     </BrowserRouter>

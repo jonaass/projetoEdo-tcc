@@ -1,15 +1,17 @@
 import './index.scss';
 import Rota from '../../components/rota'
-import { cadastrarPedido, alterarPedido } from '../../api/pedidoApi'
+import { cadastrarPedido, alterarPedido, BuscarPorId } from '../../api/pedidoApi'
 
 
-import { useState } from 'react';
-import { toast } from 'react-toastify';
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { toast } from 'react-toastify'
+import { set } from 'local-storage';
 
 
 
 export default function Agendar() {
-    const [cliente, setCliente] = useState('');
+    const [cliente, setCliente] = useState();
     const [endereco, setEndereco] = useState('');
     const [atendimento, setAtendimento] = useState('');
     const [telefone, setTelefone] = useState('');
@@ -21,7 +23,28 @@ export default function Agendar() {
     const [orcamento, setorcamento] = useState('');
     const [id, setId] = useState(0);
 
+    const { idparam } = useParams();
 
+    useEffect(() => {
+        if (idparam) {
+            CarregarPedido();
+        }
+    }, [])
+
+    async function CarregarPedido() {
+        const resposta = await BuscarPorId(idparam);
+        setCliente(resposta.cliente);
+        setEndereco(resposta.endereco);
+        setAtendimento(resposta.atendimento.substr(0, 10));
+        setTelefone(resposta.telefone);
+        setCarro(resposta.carro);
+        setAnoCarro(resposta.anoCarro.substr(0, 10));
+        setPlaca(resposta.placa);
+        setProblema(resposta.problema);
+        setPecas(resposta.pecas);
+        setorcamento(resposta.orcamento);
+        setId(resposta.id);
+    }
 
     async function salvarClick() {
         try {

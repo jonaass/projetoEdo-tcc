@@ -1,7 +1,8 @@
-import { AlterarPedido, inserirPedido, TodosPedidos ,RemoverPedido} from '../Repository/funilariaRepository.js'
+import { AlterarPedido, inserirPedido, TodosPedidos ,RemoverPedido, BuscaPorCliente} from '../Repository/funilariaRepository.js'
 
 import multer from 'multer'
 import { Router } from 'express'
+
 
 
 const server =Router();
@@ -62,6 +63,29 @@ server.post('/pedido' , async (req, resp) =>{
     }
 })
 
+
+server.get('/pedidos/busca' , async (req ,resp) =>{
+    try {
+     const { cliente } = req.query;
+     
+     const resposta = await BuscaPorCliente(cliente)
+
+     if (!resposta) {
+        resp.status(404).send([])
+     }
+     else{
+        resp.send(resposta);
+     }
+    } 
+    catch (err) {
+        resp.status(400).send({
+            erro:err.message
+        })
+    }
+})
+
+
+
 server.get('/pedidos' ,async (req, resp) =>{
     try {
         const resposta = await TodosPedidos();
@@ -76,8 +100,11 @@ server.get('/pedidos' ,async (req, resp) =>{
 
 server.delete('/pedidos/:id', async (req,resp) =>{
     try {
-        const {id} = req.params;
+        const { id } = req.params;
         const resposta = await RemoverPedido(id);
+       if (resposta != 1) {
+        throw new Error('pedido não pode serremovido')
+       }
         resp.status(206).send(resposta);
     } 
     catch (err) {
@@ -148,5 +175,11 @@ else{
  })       
     }
 })
+
+
+
+
+
+
 
 export default server;
