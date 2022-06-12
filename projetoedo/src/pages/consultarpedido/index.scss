@@ -1,63 +1,90 @@
 .pai{
+    position: relative;
+    z-index: 1;
 
-    body{
-        background-color: #252048;
-        
-        
-        }
-        .fundo{
+    display:flex;
+    justify-content:center;
+
+    padding: 10px 0px;
+    align-items: center;
+    width:100%;
+
+    .pagina{
+            padding: top 0px;
+            
+    }
+    .header{
         background-color: white;
-        margin-top: -30px;
-        height: 100px;
         
-        }
-        .img-1{
-        width: 50px;
-        height: 50px;
-        margin: auto;
-        margin-top: 50px;
+
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
         
-        }
-        .tex-1{
-        margin-left: 500px;
-        margin-top: -50px;
+     
+        padding-bottom: 60px;
+        padding-top: 20px;
+        height: 2%;
+        width:97%;
+        border-radius: 20px;
+        margin-top: 40px;
         
-        
-        }
-        
-        .img-2{
-        width: 25px;
+    }
+
+    .cabecalho{
+        height:auto;
+        display: flex;
+        align-items: center;
+        width:100%
+    }
+
+    .titulo{
+        font-size: 3em;
+        color:black
+    }
+    
+    .tabela{
+        background-color: white;
         margin-top: 30px;
-        height: 25px;
-        
-        
-        
-        }
-        
-        .tabl{
-        background-color: white;
-        height:609px;
-        width: 1270px;
-        
-        }
-        
-        table{
-        border:black solid 1px ;
-        margin-left: 500px;
-        margin-top: 20px;
-        
-        }
-        th,td{
-            border:black solid 1px ;
-             border-collapse: collapse;
-        
-        }
-        
-        td{
-        padding: 8px;
-        
-        }
-        
+        width:100%;
+        height:90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 97%;
+        border-radius: 5px;
+    }
 
+    table{
+        padding-bottom:0px;
+        width:100%;
+        border: 1px  solid black;
+        height:100%;
+
+    }
+
+    td{
+        border: 1px  solid black;
+        text-align: center;
+    }
+
+    th{
+        border: 1px  solid black;
+        background-color: gray;
+    }
+
+    .barra-pesquisa{
+        width:60em;
+        margin-top: 30px;
+        height: 40px;
+        font-size:20px
+    }
+
+    ::placeholder{
+        padding-left: 10px;
+        font-size: 16px;
+       color:gray
+    }
 
 }
