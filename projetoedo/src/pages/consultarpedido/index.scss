@@ -5,12 +5,12 @@
     display:flex;
     justify-content:center;
 
-    padding: 10px 0px;
+    
     align-items: center;
     width:100%;
 
     .pagina{
-            padding: top 0px;
+        padding: top 0px;
             
     }
     .header{
@@ -66,6 +66,10 @@
 
     }
 
+    tbody > tr{
+        height: 10em;
+    }
+
     td{
         border: 1px  solid black;
         text-align: center;
@@ -91,8 +95,8 @@
     .img-t{
         width: 35px;
         height: 35px;
-        margin-left: -1080px; 
-        margin-top: 55px;
+        margin-left: -1005px;
+        margin-top: 49px;
      }
  .x{
     width: 18px;

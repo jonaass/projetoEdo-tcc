@@ -89,17 +89,20 @@ export default function Index() {
 
         <main className='pai'>
 
+            <header className='cab'>
 
-            <body>
+            <a href="/menu">
+                 <img src='/images/66822.png' width="30" height="30" className='img-1' />
+            </a>
+
+        <div>
+            <h1>Agendar Pedido</h1>
+        </div>
+            </header>
+            
                 <main className='main'>
                     <Rota />
 
-                    <header className='cab'>
-
-                        <a href="/menu"> <img src='/images/66822.png' width="30" height="30" className='img-1' /></a>
-                        <h1>Agendar Pedido</h1>
-
-                    </header>
 
                     <section className='f1'>
 
@@ -143,7 +146,7 @@ export default function Index() {
 
                             <div className='imp , pos3'>
                                 <label for="">
-                                    Ano :
+                                    Ano Veiculo :
                                 </label>
                                 <input type="date" value={anoCarro} onChange={e => setAnoCarro(e.target.value)} />
                             </div>
@@ -157,7 +160,7 @@ export default function Index() {
 
                             <div className='imp , pos3'>
                                 <label for="">
-                                    Data :
+                                    Data Orçamento :
                                 </label>
                                 <input type="date" value={atendimento} onChange={e => setAtendimento(e.target.value)} />
                             </div>
@@ -205,7 +208,7 @@ export default function Index() {
                     </section>
                 </main>
 
-            </body>
+            
 
 
         </main>
