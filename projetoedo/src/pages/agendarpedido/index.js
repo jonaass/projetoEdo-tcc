@@ -155,7 +155,7 @@ export default function Index() {
                                 <label for="">
                                     Placa :
                                 </label>
-                                <input type="text" value={placa} onChange={e => setPlaca(e.target.value)} />
+                                <input type="text"  className='placa' value={placa} onChange={e => setPlaca(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
@@ -190,7 +190,7 @@ export default function Index() {
 
                             <div className='p1'>
                                 <h2>
-                                    Total :
+                                    Total R$ :
                                 </h2>
                                 <input className='pos5' type="text" value={orcamento} onChange={e => setorcamento(e.target.value)} />
                             </div>
@@ -201,7 +201,7 @@ export default function Index() {
                             
                             <button onClick={salvarClick} > {id === 0 ? 'Salvar' : 'Alterar'}</button> &nbsp; &nbsp;  
                         
-                            <button onClick={novoClick}>Novo</button>
+                            <button onClick={novoClick}>Limpar</button>
 
                         </div>
 
