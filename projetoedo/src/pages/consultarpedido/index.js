@@ -31,7 +31,7 @@ return(
                     <td>16h</td>
                     <td>fiat uno</td>
                     <td>
-                        <img>"</img>
+                        <img></img>
                     </td>
                 </tr>
 
