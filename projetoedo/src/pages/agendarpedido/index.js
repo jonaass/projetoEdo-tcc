@@ -91,13 +91,17 @@ export default function Index() {
 
             <header className='cab'>
 
-            <a href="/menu">
-                 <img src='/images/66822.png' width="30" height="30" className='img-1' />
-            </a>
+                <div className='posicionamento'>
 
-        <div>
-            <h1>Agendar Pedido</h1>
-        </div>
+                    <a href="/menu">
+                        <img src='/images/66822.png' width="30" height="30" className='img-1' />
+                    </a>
+
+                    <div>
+                        <h1>Agendar Pedido</h1>
+                    </div>
+
+                </div>
             </header>
             
                 <main className='main'>
@@ -111,14 +115,14 @@ export default function Index() {
                                 <label for="">
                                     Nome :
                                 </label>
-                                <input type="text" value={cliente} onChange={e => setCliente(e.target.value)} />
+                                <input className='imput' type="text" value={cliente} onChange={e => setCliente(e.target.value)} />
                             </div>
 
                             <div className='imp , pos2'>
                                 <label for="">
                                     Telefone :
                                 </label>
-                                <input type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
+                                <input className='imput' type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
                             </div>
 
 
@@ -126,11 +130,11 @@ export default function Index() {
 
                         <div>
 
-                            <div className='imp'>
+                            <div className='imp  pos_endereco'>
                                 <label for="">
                                     Endereço :
                                 </label>
-                                <input type="text" value={endereco} onChange={e => setEndereco(e.target.value)} />
+                                <input className='imput' type="text" value={endereco} onChange={e => setEndereco(e.target.value)} />
                             </div>
 
                         </div>
@@ -141,28 +145,28 @@ export default function Index() {
                                 <label for="">
                                     Veículo :
                                 </label>
-                                <input type="text" value={carro} onChange={e => setCarro(e.target.value)} />
+                                <input className='imput' type="text" value={carro} onChange={e => setCarro(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
                                 <label for="">
                                     Ano Veiculo :
                                 </label>
-                                <input type="date" value={anoCarro} onChange={e => setAnoCarro(e.target.value)} />
+                                <input className='imput' type="date" value={anoCarro} onChange={e => setAnoCarro(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
                                 <label for="">
                                     Placa :
                                 </label>
-                                <input type="text"  className='placa' value={placa} onChange={e => setPlaca(e.target.value)} />
+                                <input  type="text"  className='placa imput' value={placa} onChange={e => setPlaca(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
                                 <label for="">
                                     Data Orçamento :
                                 </label>
-                                <input type="date" value={atendimento} onChange={e => setAtendimento(e.target.value)} />
+                                <input className='imput' type="date" value={atendimento} onChange={e => setAtendimento(e.target.value)} />
                             </div>
 
                         </div>
@@ -170,11 +174,11 @@ export default function Index() {
 
                         <div className='p1'>
 
-                            <div className='imp'>
+                            <div className='imp pos4'>
                                 <label className='imp2' for="">
                                     Descrição do serviço :
                                 </label>
-                                <textarea className='txtarea , pos4' value={problema} onChange={e => setProblema(e.target.value)} />
+                                <textarea className='txtarea ' value={problema} onChange={e => setProblema(e.target.value)} />
                             </div>
 
                             <div className='imp'>
@@ -189,7 +193,7 @@ export default function Index() {
                         <div >
 
                             <div className='p1'>
-                                <h2>
+                                <h2 className='posicionamento2'>
                                     Total R$ :
                                 </h2>
                                 <input className='pos5' type="text" value={orcamento} onChange={e => setorcamento(e.target.value)} />
@@ -199,9 +203,9 @@ export default function Index() {
 
                         <div className='but'>
                             
-                            <button onClick={salvarClick} > {id === 0 ? 'Salvar' : 'Alterar'}</button> &nbsp; &nbsp;  
+                            <button className='but' onClick={salvarClick} > {id === 0 ? 'Salvar' : 'Alterar'}</button> &nbsp; &nbsp;  
                         
-                            <button onClick={novoClick}>Limpar</button>
+                            <button className='but' onClick={novoClick}>Limpar</button>
 
                         </div>
 

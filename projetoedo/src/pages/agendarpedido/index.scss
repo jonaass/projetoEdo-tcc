@@ -1,12 +1,11 @@
 .pai{
 
-    
-
     .main{
         display: flex;
         flex-direction: column;
         background-color: #252048;
         height: 100vh;
+        width: 80%;
         justify-content: flex-start;
     }
     
@@ -18,9 +17,21 @@
         height: 6em;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        justify-content: center;
         align-items: center;
-        
+    }
+
+    .posicionamento{
+        width: 51%;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    .imput{
+        height: 25px;
     }
     
     h1{
@@ -38,7 +49,7 @@
     .f1{
         display: flex;
         flex-direction: column;
-        width: 50em;
+        width: 100%;
     }
     
     .p1{
@@ -60,9 +71,9 @@
     }
     
     .txtarea{
-        margin: 0px 20px;
+        margin: 0px 9px;
         height: 8em;
-        width: 18em;
+        width: 28em;
     }
     
     .imp2{
@@ -93,30 +104,34 @@
     }
     
     .pos1{
-        width:22em ;
+        width:43% ;
     }
     
     .pos2{
-        width: 30em;
+        width: 55%;
     }
     .pos3{
-        width: 12em;
-    }
-    .pos4{
-        width: 24em;
-    }
-    .pos5{
-        height: 2em;
-    }
-    .img-1{
-    margin-left: -300px;
-    
-    
+        width: 24%;
     }
 
+    .pos_endereco{
+        width: 99%;
+    }
+
+    .pos5{
+        height: 25px;
+    }
+
+    .posicionamento2{
+        align-self: center;
+    }
+
+    .but{
+        height: 25px;
+    }
+    
     .placa{
         text-transform: uppercase;
-
     }
 
 }
