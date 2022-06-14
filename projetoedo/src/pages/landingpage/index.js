@@ -9,18 +9,20 @@ return(
 <body>
     <header className="cabeçalho">
 
-        <div className="text-cabeçalho">
-            <a className='detalhes' href="../login">Área restrita</a>
-        </div>
+       <div className='tituloico-alinhamento'> 
+        <div className="div-carro">
+                <img className="carro" src="./images/carro.png" alt=""/>
+            </div>
 
         <div className="texto-cabeçalho">
             <div>
                 <h1>Estufa de ouro</h1> 
             </div>
+        </div>
+       </div>
 
-            <div className="carro.css">
-                <img className="carro" src="./images/carro.png" alt=""/>
-            </div>
+        <div className="AR-alinhamento">
+            <a href="../login">Área restrita</a>
         </div>
 
     </header>
@@ -36,7 +38,7 @@ return(
                     Entre em contato conosco
                 </h3>
                 <h3 className="faixa1-texto3">
-                    (11)97014-9422
+                    (11) 97014-9422
                 </h3>
             </div>
         </div>
@@ -79,18 +81,18 @@ return(
 
     <section className="faixa4">
         <div className="div1">
-            <div>
-                <img className="img-div1" src="./images/icone2.png" alt=""/>
+            <div className='sapo'>
+                <img className="img-div1" src="./images/icone-celular.png" alt=""/>
             </div>
 
             <div className = "text-div1">
-                <p >Atendimento rapido e seguro</p>
+                <p>Atendimento rapido e seguro</p>
             </div>
         </div>
 
         <div className="div2">
-            <div >
-                <img className="img-div1" src="./images/icone1.png" alt=""/>
+            <div className='sapo'>
+                <img className="img-div1" src="./images/icone-relogio.png" alt=""/>
             </div>
 
             <div className="text-div2">
@@ -99,8 +101,8 @@ return(
         </div>
 
         <div className="div3">
-            <div >
-                <img className="img-div1" src="./images/icone3.png" />
+            <div className='sapo'>
+                <img className="img-div1" src="./images/icone-pincel.png"/>
             </div>
 
             <div className="text-div3">
@@ -159,28 +161,31 @@ return(
     <section className="rodape">
         <div className="bloco1-rodape">
             <div>
-                <h1 className="titulo-rodapé">Estufa de ouro </h1>
                 <img className="carro1" src="../images/carro.png" alt=""/>
+                <h1 className="titulo-rodapé">Estufa de ouro </h1>
             </div>
 
             <div>
                 <h1 className="contato-rodapé , pos">Contatos:</h1>
             </div>
 
+         <div className='coluna-contatos'>
             <div className="contatos">
-                <img  className="icone-contato"src="./images/zap-icone.png" alt=""/>
+                <img  className="icone-contato"src="./images/icone-zap.png" alt=""/>
                 <h5 className="midia-rodapé">tel: (11) 97014-9422</h5>
             </div>
             
             <div className="contatos">
-                <img className="icone-contato" src="./images/email-icone.png" alt=""/>
+                <img className="icone-contato" src="./images/icone-email.png" alt=""/>
                 <h5 className="midia-rodapé">estuf.ouro@gmail.com</h5>
             </div>
 
             <div className="contatos">
-                <img className="icone-contato" src="./images/insta-icone.png" alt=""/>
+                <img className="icone-contato" src="./images/icone-insta.png" alt=""/>
                 <a href="https://www.instagram.com/funilariaedooficial/?igshid=YmMyMTA2M2Y=" className="midia-rodapé">funilariaedooficial   </a>
             </div>
+
+         </div>
         </div>
 
         <div className="bloco2-rodape">
