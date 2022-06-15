@@ -71,3 +71,13 @@ a{
 .img-1{
     height: 40px;   
 }
+
+@media screen and (max-width:667px) {
+
+    .responsivel{
+    height: 40em;
+    width: 26em;
+    
+    }
+
+}
