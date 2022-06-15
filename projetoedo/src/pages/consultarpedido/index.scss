@@ -5,12 +5,12 @@
     display:flex;
     justify-content:center;
 
-    padding: 10px 0px;
+    
     align-items: center;
     width:100%;
 
     .pagina{
-            padding: top 0px;
+        padding: top 0px;
             
     }
     .header{
@@ -40,8 +40,10 @@
     }
 
     .titulo{
-        font-size: 3em;
-        color:black
+        font-size: 2.5em;
+        color:black;
+        margin-top: 66px;
+        justify-content: center;
     }
     
     .tabela{
@@ -62,6 +64,10 @@
         border: 1px  solid black;
         height:100%;
 
+    }
+
+    tbody > tr{
+        height: 10em;
     }
 
     td{
@@ -86,5 +92,22 @@
         font-size: 16px;
        color:gray
     }
+    .img-t{
+        width: 35px;
+        height: 35px;
+        margin-left: -1005px;
+        margin-top: 49px;
+     }
+ .x{
+    width: 18px;
+    cursor: pointer;
+    visibility: visible;
+ }
+ .lupa{
+    width: 28px;
+    height: 28px;
+    margin-left: 1em;
+    cursor: pointer;
+ }
 
 }
