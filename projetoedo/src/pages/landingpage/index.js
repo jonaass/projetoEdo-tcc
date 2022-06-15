@@ -23,7 +23,7 @@ return(
        </div>
 
         <div className="AR-alinhamento">
-            <a href="../login">Área restrita</a>
+            <a className="AR" href="../login">Administração</a>
         </div>
 
     </header>

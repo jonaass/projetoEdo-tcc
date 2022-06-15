@@ -22,8 +22,8 @@ export default function Index() {
  async function RemoverPedido(id, cliente) {
      
     confirmAlert({
-        title: 'Remover pedido',
-        message: `Desejar Remover o pedido ${cliente}?`,
+        title: 'Remover Pedido',
+        message: `Desejar Remover o Pedido ${cliente}?`,
         buttons: [
             {
                  label:'Sim',
@@ -35,7 +35,7 @@ export default function Index() {
                     else{
                        filtrar();
                     }
-                    toast.dark('❤️ pedido removido');
+                    toast.dark('❤️ Pedido Removido');
                  }
             },
             {
@@ -89,11 +89,11 @@ return(
             <table>
                 <thead>
                 <tr>
-                    <th>endereço</th>
-                    <th>nome</th>
-                    <th>data</th>
-                    <th>veiculo</th>
-                    <th>ações</th>
+                    <th>Endereço</th>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Veiculo</th>
+                    <th>Ações</th>
                 </tr>
                 </thead>
 

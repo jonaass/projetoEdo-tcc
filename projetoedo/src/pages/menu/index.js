@@ -11,7 +11,7 @@ export default function Menu() {
 
     function sairClick() {
         storage.remove('usuario-logado');
-        navigate('/landingpage')
+        navigate('/')
     }
 
     return(
@@ -20,7 +20,7 @@ export default function Menu() {
            <Rota />
             <div className='primeiro responsivel'>
                 <div className='seta' onClick={sairClick}>
-                    <a href="/landingpage" >
+                    <a href="/" >
                         <img src="/images/66822.png" className='img-1'/> 
                     </a>
                 </div>
