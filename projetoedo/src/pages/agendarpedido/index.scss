@@ -134,4 +134,31 @@
         text-transform: uppercase;
     }
 
+@media screen and (max-width:667px) {
+
+        .responsivo{
+            margin: 0px 9px;
+            height: 8em;
+            width: 15em;
+        
+        }
+        .responsivo2 {
+            margin: 0px 9px;
+            height: 8em;
+            width: 14em;
+        
+        }
+        .responsivo-3{
+            width: 51%;
+            margin-left: 63px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        
+        }
+    
+    }
+
 }

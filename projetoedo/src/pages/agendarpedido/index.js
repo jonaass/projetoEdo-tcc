@@ -91,7 +91,7 @@ export default function Index() {
 
             <header className='cab'>
 
-                <div className='posicionamento'>
+                <div className='posicionamento responsivo-3'>
 
                     <a href="/menu">
                         <img src='/images/66822.png' width="30" height="30" className='img-1' />
@@ -178,14 +178,14 @@ export default function Index() {
                                 <label className='imp2' for="">
                                     Descrição do serviço :
                                 </label>
-                                <textarea className='txtarea ' value={problema} onChange={e => setProblema(e.target.value)} />
+                                <textarea className='txtarea responsivo2 ' value={problema} onChange={e => setProblema(e.target.value)} />
                             </div>
 
                             <div className='imp'>
                                 <label className='imp2' for="">
                                     Peças :
                                 </label>
-                                <textarea className='txtarea' value={pecas} onChange={e => setPecas(e.target.value)} />
+                                <textarea className='txtarea  responsivo 'value={pecas} onChange={e => setPecas(e.target.value)} />
                             </div>
 
                         </div>
