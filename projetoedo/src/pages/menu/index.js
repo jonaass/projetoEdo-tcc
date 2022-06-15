@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Rota from '../../components/rota'
 
 
+
 export default function Menu() {
 
     const navigate = useNavigate(); 
@@ -15,12 +16,12 @@ export default function Menu() {
 
     return(
 
-        <main>
+        <main >
            <Rota />
-            <div className='primeiro'>
+            <div className='primeiro responsivel'>
                 <div className='seta' onClick={sairClick}>
-                    <a href="../landingpage" >
-                        <img src="./images/66822.png" className='img-1'/> 
+                    <a href="/landingpage" >
+                        <img src="/images/66822.png" className='img-1'/> 
                     </a>
                 </div>
 
