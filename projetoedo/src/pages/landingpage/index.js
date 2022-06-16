@@ -1,8 +1,6 @@
 import'./index.scss';
 
 
-import { Link } from 'react-router-dom';
-
 export default function index() {
     
 return(
@@ -23,7 +21,7 @@ return(
        </div>
 
         <div className="AR-alinhamento">
-            <a className="AR" href="../login">Administração</a>
+            <a className="AR" href="../login">Área Restrita</a>
         </div>
 
     </header>
@@ -32,13 +30,17 @@ return(
         <div className="faixa1-imagem">
             <div className="faixa1-texto">
                 <h3 className="faixa1-texto1">
-                    Um carro bem cuidado, faz você ir longe!
+                    Um carro bem cuidado,
                 </h3>
 
-                <h3 className="faixa1-texto2">
-                    Entre em contato conosco
+                <h3 className='faixa1-texto2'>
+                  faz você ir longe!
                 </h3>
+
                 <h3 className="faixa1-texto3">
+                    Entre em contato conosco!
+                </h3>
+                <h3 className="faixa1-texto4">
                     (11) 97014-9422
                 </h3>
             </div>
@@ -71,19 +73,23 @@ return(
 
         <div className="bloco4">
             <div className="bloco4-titulo">
-                <h1>Prezamos pelo cuidado do veículo</h1>
+                <h1 className='bloco4-titulo-linha1'>Prezamos pelo  </h1>
+                <h1 className='bloco4-titulo-linha2e3'> cuidado do seu </h1>
+                <h1 className='bloco4-titulo-linha2e3'> veículo! </h1>
             </div>
 
             <div className="bloco4-texto">
-                <h5>Seu automóvel em boas mãos, temos como objetivo a excelência na qualidade dos nossos serviços</h5>
+                <h5 className='bloco4-texto-linha1'>Seu automóvel em boas mãos.</h5>
+                <h5 className='bloco4-texto-linha2e3' >Temos como objetivo a excelência </h5>
+                <h5 className='bloco4-texto-linha2e3'>na qualidade dos nossos serviços </h5>
             </div>
         </div>
     </section>
 
     <section className="faixa4">
         <div className="div1">
-            <div className='sapo'>
-                <img className="img-div1" src="./images/icone-celular.png" alt=""/>
+            <div className='circulo-icone'>
+                <img className="img-div2" src="./images/icone-celular.png" alt=""/>
             </div>
 
             <div className = "text-div1">
@@ -92,8 +98,8 @@ return(
         </div>
 
         <div className="div2">
-            <div className='sapo'>
-                <img className="img-div1" src="./images/icone-relogio.png" alt=""/>
+            <div className='circulo-icone'>
+                <img className="img-div2" src="./images/icone-relogio.png" alt=""/>
             </div>
 
             <div className="text-div2">
@@ -102,8 +108,8 @@ return(
         </div>
 
         <div className="div3">
-            <div className='sapo'>
-                <img className="img-div1" src="./images/icone-pincel.png"/>
+            <div className='circulo-icone'>
+                <img className="img-div3" alt='pincel' src="./images/icone-pincel.png"/>
             </div>
 
             <div className="text-div3">
@@ -115,7 +121,7 @@ return(
     <section className="faixa5">
         <div className="texto-faixa5">
             <h1 className="titulo5">Funilaria</h1>
-            <p className="'texto5">O melhor cuidado com os veiculos e com os nosso clientes</p>
+            <p className="'texto5">O melhor cuidado com os veiculos e com os nossos clientes</p>
         </div>
 
         <div className="img-faixa5">
@@ -126,7 +132,7 @@ return(
     <section className="faixa6">
         <div className="texto-faixa5">
             <h1 className="titulo5">Cristalização</h1>
-            <p className="texto5">Procedimento com a missão de ampliar a durabilidade da tintar do automóvel</p>
+            <p className="texto5">Procedimento com intuito de aumentar a longevidade da tinta do automóvel</p>
         </div>
 
         <div className="img-f5">
@@ -137,7 +143,7 @@ return(
     <section className="faixa7">
         <div className="texto-faixa5">
             <h1 className="titulo5">Pintura</h1>
-            <p className="texto5">Tintas de alta qualidade e o cuidado total com a integridade do veiculo</p>
+            <p className="texto5">Tintas de alta qualidade e cuidado e atenção total com o seu veículo</p>
         </div>
 
         <div className="img-faixa5">
@@ -148,7 +154,7 @@ return(
     <section className="faixa8">
         <div className="texto-faixa5">
             <h1 className="titulo5">Polimento</h1>
-            <p className="texto5"> Um procedimento que ajuda na estética do veiculo, e fará ele voltar br/ilhando como nunca para  casa</p>
+            <p className="texto5"> Um procedimento que ajuda na estética do veículo, e fará ele voltar brilhando como nunca para casa</p>
         </div>
 
         <div className="img-faixa5">

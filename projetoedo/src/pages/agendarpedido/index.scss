@@ -20,6 +20,15 @@
         align-items: center;
     }
 
+    .agendarpedido{
+        font-family: 'font5';
+        font-size: 2em;
+    }
+
+    .fonte{
+        font-family: 'font6';
+    }
+
     .img-1{
         height: 40px;
         width: 40px;
@@ -45,7 +54,6 @@
     }
     
     label{
-        font-family: 'inter-Semibold';
         font-size: 15px;
         color: #ffffff;
     
@@ -69,7 +77,6 @@
     }
     
     h2{
-        font-family: 'inter-Semibold';
         font-size: 15px;
         color: #ffffff;
         margin: 0px 6px;
@@ -83,6 +90,7 @@
     
     .imp2{
         margin:0px 20px;
+        font-family: 'font6';
     }
     
     .but{
@@ -92,14 +100,9 @@
         padding-right: 81px;
     }
     
-    button{
-        font-family: 'inter-Semibold';
-        font-size: 15px;
-    }
     .salvar{
         font-size: 15px;
         display: flow-root;
-        font-family: "inter-Semibold";
         height: 63px;
         width: 53px;
     }
@@ -127,12 +130,34 @@
         height: 25px;
     }
 
-    .posicionamento2{
+    .total{
+        font-family: 'font6';
         align-self: center;
     }
 
-    .but{
-        height: 25px;
+    .div-but{
+        display: flex;
+        justify-content: flex-end;        
+        height: 25px; 
+    }
+
+    .but-1{
+        padding-right: 30px;
+        font-family: 'font5';
+        font-size: 14px;
+        
+    }
+
+    .but-2{
+        font-family: 'font5';
+        font-size: 14px;
+        
+    }
+
+    button{
+        border: none;
+        width: 60px;
+        height: 30px;
     }
     
     .placa{

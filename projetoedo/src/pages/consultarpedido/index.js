@@ -72,7 +72,7 @@ return(
         <header className="header">
             <div className="set-1">
         <a href="../menu">
-            <img src='./images/66822.png' className='img-t'/>
+            <img src='./images/66822.png' alt='seta' className='img-t'/>
             </a>
             </div> 
             <h1 className="titulo">Pedidos</h1>

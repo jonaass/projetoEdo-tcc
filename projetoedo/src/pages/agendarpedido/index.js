@@ -10,6 +10,7 @@ import { toast } from 'react-toastify'
 
 
 
+
 export default function Index() {
     const [cliente, setCliente] = useState('');
     const [endereco, setEndereco] = useState('');
@@ -94,7 +95,7 @@ export default function Index() {
                 <div className='posicionamento responsivo-3'>
 
                     <a href="/menu">
-                        <img src='/images/66822.png' className='img-1' />
+                        <img src='/images/66822.png' alt='seta' className='img-1' />
                     </a>
 
                     <div className='divagendarpedido'>
@@ -112,14 +113,14 @@ export default function Index() {
 
                         <div className='p1'>
                             <div className='imp , pos1'>
-                                <label for="">
+                                <label className='fonte' for="">
                                     Nome:
                                 </label>
                                 <input className='imput' type="text" value={cliente} onChange={e => setCliente(e.target.value)} />
                             </div>
 
                             <div className='imp , pos2'>
-                                <label for="">
+                                <label className='fonte' for="">
                                     Telefone:
                                 </label>
                                 <input className='imput' type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
@@ -131,7 +132,7 @@ export default function Index() {
                         <div>
 
                             <div className='imp  pos_endereco'>
-                                <label for="">
+                                <label className='fonte' for="">
                                     Endereço:
                                 </label>
                                 <input className='imput' type="text" value={endereco} onChange={e => setEndereco(e.target.value)} />
@@ -142,28 +143,28 @@ export default function Index() {
                         <div className='p1'>
 
                             <div className='imp , pos3'>
-                                <label for="">
+                                <label className='fonte' for="">
                                     Veículo:
                                 </label>
                                 <input className='imput' type="text" value={carro} onChange={e => setCarro(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
-                                <label for="">
+                                <label className='fonte' for="">
                                     Ano Veiculo:
                                 </label>
                                 <input className='imput' type="date" value={anoCarro} onChange={e => setAnoCarro(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
-                                <label for="">
+                                <label className='fonte' for="">
                                     Placa:
                                 </label>
                                 <input  type="text"  className='placa imput' value={placa} onChange={e => setPlaca(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
-                                <label for="">
+                                <label className='fonte' for="">
                                     Data Orçamento:
                                 </label>
                                 <input className='imput' type="date" value={atendimento} onChange={e => setAtendimento(e.target.value)} />
@@ -193,7 +194,7 @@ export default function Index() {
                         <div >
 
                             <div className='p1'>
-                                <h2 className='posicionamento2'>
+                                <h2 className='total'>
                                     Total R$:
                                 </h2>
                                 <input className='pos5' type="text" value={orcamento} onChange={e => setorcamento(e.target.value)} />
@@ -201,11 +202,12 @@ export default function Index() {
 
                         </div>
 
-                        <div className='but'>
+                        <div className='div-but'>
                             
-                            <button className='but' onClick={salvarClick} > {id === 0 ? 'Salvar' : 'Alterar'}</button> &nbsp; &nbsp;  
-                        
-                            <button className='but' onClick={novoClick}>Limpar</button>
+                            <button className='but-1' onClick={salvarClick} > {id === 0 ? 'Salvar' : 'Alterar'}</button> &nbsp; &nbsp;  
+                            <button className='but-2' onClick={novoClick}>Limpar</button>
+
+                            
 
                         </div>
 

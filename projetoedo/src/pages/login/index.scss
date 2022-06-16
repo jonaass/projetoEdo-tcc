@@ -1,5 +1,3 @@
-
-
 .sombra {
   height: 100vh;
   display: flex;
@@ -42,7 +40,7 @@
 }
 
 .titulo{
-    font-family: "font1";
+    font-family: 'font3';
     font-size: 40px;
     align-self: center;
     color: #fff;
@@ -62,30 +60,35 @@
     font-family: 'font3';
     font-size: 38px;
     text-align: center;
+    
 }
 
 .input{
+    font-family: 'font1';
     width: 28em;
     height: 45px;
     background-color: #F5F6FA;
     border: 0px;
+    padding-left: 1em;
+    
     
 }
 
 .esqueceu{
+    font-family: 'font1';
     color: #B5B4B4;
     width: 23em;
 }
 
 .button {
-    width: 13em;
+    width: 23.4em;
     height: 45px;
     background: #252048;
-    font-family: "font3";
     color: #ffffff;
 }
 
 .botao{
+    font-family: 'font2';
     width: 100%;
     height: 100%;
     background-color: #252048;
@@ -187,4 +190,28 @@
   position: relative;
   top: 40px;
   height: 50px;
+}
+
+@media screen and (max-width:667px) {
+  .responsivo-1{
+  width: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .responsivo-2{
+  height: auto;
+  width: 16em;
+  align-self: center;
+  }
+
+  .responsivo-3-{
+  width: 12em;
+  height: 45px;
+  background-color: #F5F6FA;
+  border: 0px;
+  margin-left: -185px;
+  }
 }

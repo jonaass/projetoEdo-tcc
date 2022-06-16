@@ -21,7 +21,7 @@ export default function Menu() {
             <div className='primeiro responsivel'>
                 <div className='seta' onClick={sairClick}>
                     <a href="/" >
-                        <img src="/images/66822.png" className='img-1'/> 
+                        <img src="/images/66822.png" alt='seta' className='img-1'/> 
                     </a>
                 </div>
 
@@ -29,13 +29,13 @@ export default function Menu() {
                 
                 <div className='Agendar'>
                     <button className="b1">
-                        <a href="../agendarpedido">Agendar Pedido</a>
+                        <a className= 'fonte' href="../agendarpedido">Agendar Pedido</a>
                     </button>
                 </div>
 
                 <div className='Consulta'>
                     <button className="b2">
-                        <a href="../consultarpedido">Consulta de Pedido</a>
+                        <a className= 'fonte' href="../consultarpedido">Consulta de Pedido</a>
                     </button>
                 </div>
 
