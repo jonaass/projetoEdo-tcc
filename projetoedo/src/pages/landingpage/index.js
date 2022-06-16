@@ -2,7 +2,7 @@ import'./index.scss';
 
 
 
-import { Link } from 'react-router-dom';
+
 
 export default function index() {
     
@@ -94,7 +94,7 @@ return(
 
         <div className="div2">
             <div className='sapo'>
-                <img className="img-div1" src="./images/icone-relogio.png" alt=""/>
+                <img className="img-div2" src="./images/icone-relogio.png" alt=""/>
             </div>
 
             <div className="text-div2">
@@ -104,7 +104,7 @@ return(
 
         <div className="div3">
             <div className='sapo'>
-                <img className="img-div1" src="./images/icone-pincel.png"/>
+                <img className="img-div3" src="./images/icone-pincel.png"/>
             </div>
 
             <div className="text-div3">

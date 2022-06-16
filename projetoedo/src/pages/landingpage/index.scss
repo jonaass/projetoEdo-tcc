@@ -201,13 +201,20 @@
     padding-top: 1em;
 }
 
-.img-div1 {
-
+.img-div1, .img-div2 , .img-div3 {
     height: 8em;
     width: 8em;
-    
-    
+}
 
+.sapo:hover{
+    height: 10em;
+    width: 10em;
+  
+}
+
+.img-div1:hover, .img-div2:hover , .img-div3:hover{
+    height: 10em;
+    width: 10em;
 }
 
 .sapo{
