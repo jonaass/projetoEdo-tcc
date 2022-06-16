@@ -1,4 +1,5 @@
 import './index.scss'
+import Rota from '../../components/rota'
 
 import { ListarPedidos, BuscaPorCliente, deletarPedido } from '../../api/pedidoApi'
 
@@ -65,6 +66,7 @@ export default function Index() {
 return(
     
 <main className='pai pagina'>
+    <Rota/>
 
 
         <header className="header">
