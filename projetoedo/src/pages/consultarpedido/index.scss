@@ -116,4 +116,27 @@
     margin-bottom: -7px;
  }
 
+ @media screen and (max-width:667px) {
+  .responsivo-1{
+    width: 17em;
+    margin-top: 30px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .certo{
+    margin-left: 11px;
+    margin-top: 5px;
+    width: 21px;
+  }
+  .errado{
+    margin-right: 11px;
+    margin-top: 22px;
+    width: 21px;
+  }
+  .responsivo-2{
+    margin-left: -344px;
+  }
+
+ }
+
 }

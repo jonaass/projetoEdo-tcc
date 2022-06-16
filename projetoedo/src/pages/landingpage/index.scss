@@ -400,3 +400,15 @@
     font-family: 'font4';
     margin-left: 3em;
 }
+
+@media screen and (max-width:667px) {
+    .responsivo-1{
+        margin-top: -160px; 
+     } 
+     .texto-2 {
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+     }
+    
+}
