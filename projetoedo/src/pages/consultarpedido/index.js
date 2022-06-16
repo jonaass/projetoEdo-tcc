@@ -82,8 +82,8 @@ return(
        
 
         <div>
-            <input className="barra-pesquisa" type="text" placeholder="Buscar por Nome" value={filtro} onChange={e => setFiltro(e.target.value)}/>
-            <img src='./images/search-free-icon-font.png' className='lupa' alt='buscar' onClick={filtrar}/>
+            <input className="barra-pesquisa responsivo-1" type="text" placeholder="Buscar por Nome" value={filtro} onChange={e => setFiltro(e.target.value)}/>
+            <img src='./images/search-free-icon-font.png' className='lupa ' alt='buscar' onClick={filtrar}/>
 
         </div>
 
@@ -107,9 +107,9 @@ return(
                       <td>{item.atendimento.substr(0, 10)}</td>
                       <td>{item.Carro}</td>
                       <td>
-                          <img src='./images/edit-free-icon-font (1).png' className='x' alt='editar' onClick={() => EditarPedido(item.id)} />
+                          <img src='./images/edit-free-icon-font (1).png' className='x certo' alt='editar' onClick={() => EditarPedido(item.id)} />
                           &nbsp; &nbsp; &nbsp;
-                          <img src='./images/cross-free-icon-font (1).png' className='x'alt='remover' onClick={() => RemoverPedido(item.id, item.nome)}  />
+                          <img src='./images/cross-free-icon-font (1).png' className='x errado'alt='remover' onClick={() => RemoverPedido(item.id, item.nome)}  />
                       </td>
                         </tr>
   

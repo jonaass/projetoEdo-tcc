@@ -28,7 +28,7 @@ return(
 
     <main className="faixa1">
         <div className="faixa1-imagem">
-            <div className="faixa1-texto">
+            <div className="faixa1-texto texto-2">
                 <h3 className="faixa1-texto1">
                     Um carro bem cuidado,
                 </h3>
@@ -48,7 +48,7 @@ return(
 
     </main>
 
-    <section className="faixa2">
+    <section className="faixa2 responsivo-1">
         <div className='f2-textos'>
             <h3 className="faixa2-texto1">
                 Deixe o seu volante em 
