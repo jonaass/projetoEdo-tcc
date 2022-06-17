@@ -50,18 +50,18 @@ return(
 
     <section className="faixa2 responsivo-1">
         <div className='f2-textos'>
-            <h3 className="faixa2-texto1">
+            <h3 className="faixa2-texto1 pe">
                 Deixe o seu volante em 
                 boas mãos! 
             </h3>
         
-            <p className="faixa2-texto2"> 
+            <p className="faixa2-texto2 mao"> 
             Sempre prezando pelo melhor 
             atendimento do cliente 
             </p>
         </div>
 
-        <div className="bloco2">
+        <div className="bloco2 dedo">
             
         </div>
     </section>
@@ -120,7 +120,7 @@ return(
 
     <section className="faixa5 respon-3">
         <div className="texto-faixa5">
-            <h1 className="titulo5">Funilaria</h1>
+            <h1 className="titulo5 textor2">Funilaria</h1>
             <p className="'texto5">O melhor cuidado com os veiculos e com os nossos clientes</p>
         </div>
 
@@ -131,7 +131,7 @@ return(
 
     <section className="faixa6 respon-3">
         <div className="texto-faixa5">
-            <h1 className="titulo5">Cristalização</h1>
+            <h1 className="titulo5 textor">Cristalização</h1>
             <p className="texto5">Procedimento com intuito de aumentar a longevidade da tinta do automóvel</p>
         </div>
 
@@ -142,7 +142,7 @@ return(
 
     <section className="faixa7 respon-3">
         <div className="texto-faixa5">
-            <h1 className="titulo5">Pintura</h1>
+            <h1 className="titulo5 textor">Pintura</h1>
             <p className="texto5">Tintas de alta qualidade e cuidado e atenção total com o seu veículo</p>
         </div>
 
@@ -153,7 +153,7 @@ return(
 
     <section className="faixa8 respon-3">
         <div className="texto-faixa5">
-            <h1 className="titulo5">Polimento</h1>
+            <h1 className="titulo5 textor">Polimento</h1>
             <p className="texto5"> Um procedimento que ajuda na estética do veículo, e fará ele voltar brilhando como nunca para casa</p>
         </div>
 
@@ -196,7 +196,7 @@ return(
         </div>
 
         <div className="bloco2-rodape">
-            <h1 className="titulo-mapa">Onde nos encontrar:</h1>
+            <h1 className="titulo-mapa lado">Onde nos encontrar:</h1>
 
             <img  className="bloco2-img mapa"src="./images/mapa.png" alt=""/>
         </div>
