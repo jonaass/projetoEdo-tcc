@@ -66,8 +66,8 @@ return(
         </div>
     </section>
 
-    <section className="faixa3">
-        <div className="bloco3">
+    <section className="faixa3 respon-1">
+        <div className="bloco3  respon-2">
 
         </div>
 
@@ -118,47 +118,47 @@ return(
         </div>
     </section>
 
-    <section className="faixa5">
+    <section className="faixa5 respon-3">
         <div className="texto-faixa5">
             <h1 className="titulo5">Funilaria</h1>
             <p className="'texto5">O melhor cuidado com os veiculos e com os nossos clientes</p>
         </div>
 
         <div className="img-faixa5">
-            <img className="imagem-5" src="./images/img1.jpg" alt=""/>
+            <img className="imagem-5 cara" src="./images/img1.jpg" alt=""/>
         </div>
     </section>
 
-    <section className="faixa6">
+    <section className="faixa6 respon-3">
         <div className="texto-faixa5">
             <h1 className="titulo5">Cristalização</h1>
             <p className="texto5">Procedimento com intuito de aumentar a longevidade da tinta do automóvel</p>
         </div>
 
         <div className="img-f5">
-            <img className="img-5" src="./images/img4.png" alt=""/>
+            <img className="img-5 cara2" src="./images/img4.png" alt=""/>
         </div>
     </section>
 
-    <section className="faixa7">
+    <section className="faixa7 respon-3">
         <div className="texto-faixa5">
             <h1 className="titulo5">Pintura</h1>
             <p className="texto5">Tintas de alta qualidade e cuidado e atenção total com o seu veículo</p>
         </div>
 
         <div className="img-faixa5">
-            <img className="imagem-5" src="./images/img5.jpg" alt=""/>
+            <img className="imagem-5 cara2" src="./images/img5.jpg" alt=""/>
         </div>
     </section>
 
-    <section className="faixa8">
+    <section className="faixa8 respon-3">
         <div className="texto-faixa5">
             <h1 className="titulo5">Polimento</h1>
             <p className="texto5"> Um procedimento que ajuda na estética do veículo, e fará ele voltar brilhando como nunca para casa</p>
         </div>
 
         <div className="img-faixa5">
-            <img className="imagem-6" src="./images/img6.jpg" alt=""/>
+            <img className="imagem-6 cara2" src="./images/img6.jpg" alt=""/>
         </div>
     </section>
 
@@ -166,7 +166,7 @@ return(
 
 
     <section className="rodape">
-        <div className="bloco1-rodape">
+        <div className="bloco1-rodape roda">
             <div>
                 <img className="carro1" src="../images/carro.png" alt=""/>
                 <h1 className="titulo-rodapé">Estufa de ouro </h1>
@@ -198,7 +198,7 @@ return(
         <div className="bloco2-rodape">
             <h1 className="titulo-mapa">Onde nos encontrar:</h1>
 
-            <img  className="bloco2-img"src="./images/mapa.png" alt=""/>
+            <img  className="bloco2-img mapa"src="./images/mapa.png" alt=""/>
         </div>
     </section>
 </body>
