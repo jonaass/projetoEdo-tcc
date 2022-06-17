@@ -231,6 +231,13 @@
 .div1, .div2 ,.div3 {
     text-align: center;
 }
+.div1{
+    padding-top: 1em;
+}
+
+.div2{
+    padding-top: 1em;
+}
 
 .div3{
     padding-top: 1em;
@@ -451,5 +458,36 @@
 .titulo-mapa{
     font-family: 'font4';
     margin-left: 2em;
+
+}
+@media screen and (max-width:667px) {
+   .celular-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-right: -376px;
+   }
+
+   .celular-2{
+    padding-top: -107em;
+    margin-top: -962px;
+    margin-left: 128px;
+
+   }
+   .fundocelular{
+    height: 1252px;
+   }
+   .celular-3{
+    margin-top: -268px;
+    margin-left: -451px;
+    padding-top: 22em;
+   }
+
+   .celular-4{
+    padding-top: 58em;
+   }
+
 
 }

@@ -72,7 +72,7 @@ return(
         <header className="header">
             <div className="set-1">
         <a href="../menu">
-            <img src='./images/66822.png' alt='seta' className='img-t'/>
+            <img src='./images/66822.png' alt='seta' className='img-t responsivo-4'/>
             </a>
             </div> 
             <h1 className="titulo">Pedidos</h1>
@@ -83,7 +83,7 @@ return(
 
         <div>
             <input className="barra-pesquisa responsivo-1" type="text" placeholder="Buscar por Nome" value={filtro} onChange={e => setFiltro(e.target.value)}/>
-            <img src='./images/search-free-icon-font.png' className='lupa ' alt='buscar' onClick={filtrar}/>
+            <img src='./images/search-free-icon-font.png' className='lupa responsivo-6' alt='buscar' onClick={filtrar}/>
 
         </div>
 

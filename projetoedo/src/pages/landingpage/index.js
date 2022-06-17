@@ -8,7 +8,7 @@ return(
 <body>
     <header className="cabeçalho">
 
-       <div className='tituloico-alinhamento'> 
+       <div className='tituloico-alinhamento  celular-1'> 
         <div className="div-carro">
                 <img className="carro" src="./images/carro.png" alt=""/>
             </div>
@@ -86,8 +86,8 @@ return(
         </div>
     </section>
 
-    <section className="faixa4">
-        <div className="div1">
+    <section className="faixa4 fundocelular">
+        <div className="div1 celular-2">
             <div className='circulo-icone'>
                 <img className="img-div2" src="./images/icone-celular.png" alt=""/>
             </div>
@@ -97,7 +97,7 @@ return(
             </div>
         </div>
 
-        <div className="div2">
+        <div className="div2 celular-3">
             <div className='circulo-icone'>
                 <img className="img-div2" src="./images/icone-relogio.png" alt=""/>
             </div>
@@ -107,7 +107,7 @@ return(
             </div>
         </div>
 
-        <div className="div3">
+        <div className="div3 celular-4">
             <div className='circulo-icone'>
                 <img className="img-div3" alt='pincel' src="./images/icone-pincel.png"/>
             </div>
