@@ -8,7 +8,7 @@ return(
 <body>
     <header className="cabeçalho">
 
-       <div className='tituloico-alinhamento'> 
+       <div className='tituloico-alinhamento  celular-1'> 
         <div className="div-carro">
                 <img className="carro" src="./images/carro.png" alt=""/>
             </div>
@@ -50,24 +50,24 @@ return(
 
     <section className="faixa2 responsivo-1">
         <div className='f2-textos'>
-            <h3 className="faixa2-texto1">
+            <h3 className="faixa2-texto1 pe">
                 Deixe o seu volante em 
                 boas mãos! 
             </h3>
         
-            <p className="faixa2-texto2"> 
+            <p className="faixa2-texto2 mao"> 
             Sempre prezando pelo melhor 
             atendimento do cliente 
             </p>
         </div>
 
-        <div className="bloco2">
+        <div className="bloco2 dedo">
             
         </div>
     </section>
 
-    <section className="faixa3">
-        <div className="bloco3">
+    <section className="faixa3 respon-1">
+        <div className="bloco3  respon-2">
 
         </div>
 
@@ -86,8 +86,8 @@ return(
         </div>
     </section>
 
-    <section className="faixa4">
-        <div className="div1">
+    <section className="faixa4 fundocelular">
+        <div className="div1 celular-2">
             <div className='circulo-icone'>
                 <img className="img-div2" src="./images/icone-celular.png" alt=""/>
             </div>
@@ -97,7 +97,7 @@ return(
             </div>
         </div>
 
-        <div className="div2">
+        <div className="div2 celular-3">
             <div className='circulo-icone'>
                 <img className="img-div2" src="./images/icone-relogio.png" alt=""/>
             </div>
@@ -107,7 +107,7 @@ return(
             </div>
         </div>
 
-        <div className="div3">
+        <div className="div3 celular-4">
             <div className='circulo-icone'>
                 <img className="img-div3" alt='pincel' src="./images/icone-pincel.png"/>
             </div>
@@ -118,47 +118,47 @@ return(
         </div>
     </section>
 
-    <section className="faixa5">
+    <section className="faixa5 respon-3">
         <div className="texto-faixa5">
-            <h1 className="titulo5">Funilaria</h1>
+            <h1 className="titulo5 textor2">Funilaria</h1>
             <p className="'texto5">O melhor cuidado com os veiculos e com os nossos clientes</p>
         </div>
 
         <div className="img-faixa5">
-            <img className="imagem-5" src="./images/img1.jpg" alt=""/>
+            <img className="imagem-5 cara" src="./images/img1.jpg" alt=""/>
         </div>
     </section>
 
-    <section className="faixa6">
+    <section className="faixa6 respon-3">
         <div className="texto-faixa5">
-            <h1 className="titulo5">Cristalização</h1>
+            <h1 className="titulo5 textor">Cristalização</h1>
             <p className="texto5">Procedimento com intuito de aumentar a longevidade da tinta do automóvel</p>
         </div>
 
         <div className="img-f5">
-            <img className="img-5" src="./images/img4.png" alt=""/>
+            <img className="img-5 cara2" src="./images/img4.png" alt=""/>
         </div>
     </section>
 
-    <section className="faixa7">
+    <section className="faixa7 respon-3">
         <div className="texto-faixa5">
-            <h1 className="titulo5">Pintura</h1>
+            <h1 className="titulo5 textor">Pintura</h1>
             <p className="texto5">Tintas de alta qualidade e cuidado e atenção total com o seu veículo</p>
         </div>
 
         <div className="img-faixa5">
-            <img className="imagem-5" src="./images/img5.jpg" alt=""/>
+            <img className="imagem-5 cara2" src="./images/img5.jpg" alt=""/>
         </div>
     </section>
 
-    <section className="faixa8">
+    <section className="faixa8 respon-3">
         <div className="texto-faixa5">
-            <h1 className="titulo5">Polimento</h1>
+            <h1 className="titulo5 textor">Polimento</h1>
             <p className="texto5"> Um procedimento que ajuda na estética do veículo, e fará ele voltar brilhando como nunca para casa</p>
         </div>
 
         <div className="img-faixa5">
-            <img className="imagem-6" src="./images/img6.jpg" alt=""/>
+            <img className="imagem-6 cara2" src="./images/img6.jpg" alt=""/>
         </div>
     </section>
 
@@ -166,7 +166,7 @@ return(
 
 
     <section className="rodape">
-        <div className="bloco1-rodape">
+        <div className="bloco1-rodape roda">
             <div>
                 <img className="carro1" src="../images/carro.png" alt=""/>
                 <h1 className="titulo-rodapé">Estufa de ouro </h1>
@@ -196,9 +196,9 @@ return(
         </div>
 
         <div className="bloco2-rodape">
-            <h1 className="titulo-mapa">Onde nos encontrar:</h1>
+            <h1 className="titulo-mapa lado">Onde nos encontrar:</h1>
 
-            <img  className="bloco2-img"src="./images/mapa.png" alt=""/>
+            <img  className="bloco2-img mapa"src="./images/mapa.png" alt=""/>
         </div>
     </section>
 </body>

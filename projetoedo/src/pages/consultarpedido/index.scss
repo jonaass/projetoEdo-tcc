@@ -122,4 +122,27 @@
     margin-bottom: -7px;
  }
 
+ @media screen and (max-width:667px) {
+    .responsivo-4{
+    width: 35px;
+    height: 35px;
+    margin-left: -302px;
+    margin-top: 49px;
+    }
+    .responsivo-1{
+     width: 19em;
+    margin-top: 30px;
+    height: 40px;
+    font-size: 20px;
+    }
+    .responsivo-6{
+    width: 30px;
+    margin-left: 25em;
+    cursor: pointer;
+    margin-bottom: -7px;
+    }
+ 
+ }
+ 
+
 }

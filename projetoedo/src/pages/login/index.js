@@ -66,7 +66,7 @@ return(
 
                 <div className="container-direita responsivo-1">
 
-                    <h3 className="area-restrita"> Área Restrita <br/> Login </h3>
+                    <h3 className="area-restrita kkk"> Área Restrita <br/> Login </h3>
 
                     <input type="text" id="imputUsuario" placeholder="Usuário" required="required"  autofocus="autofocus" className="input responsivo-3" value={nome} onChange={e => setNome(e.target.value) }/>
 
