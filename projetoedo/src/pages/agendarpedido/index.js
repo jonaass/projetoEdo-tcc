@@ -182,7 +182,7 @@ export default function Index() {
                                 <textarea className='txtarea responsivo2 ' value={problema} onChange={e => setProblema(e.target.value)} />
                             </div>
 
-                            <div className='imp'>
+                            <div className='imp pos4'>
                                 <label className='imp2' for="">
                                     Peças:
                                 </label>
