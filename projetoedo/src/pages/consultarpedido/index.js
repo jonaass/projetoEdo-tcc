@@ -1,4 +1,5 @@
 import './index.scss'
+import Rota from '../../components/rota'
 
 import { ListarPedidos, BuscaPorCliente, deletarPedido } from '../../api/pedidoApi'
 
@@ -22,8 +23,8 @@ export default function Index() {
  async function RemoverPedido(id, cliente) {
      
     confirmAlert({
-        title: 'Remover pedido',
-        message: `Desejar Remover o pedido ${cliente}?`,
+        title: 'Remover Pedido',
+        message: `Desejar Remover o Pedido ${cliente}?`,
         buttons: [
             {
                  label:'Sim',
@@ -35,7 +36,7 @@ export default function Index() {
                     else{
                        filtrar();
                     }
-                    toast.dark('❤️ pedido removido');
+                    toast.dark('❤️ Pedido Removido');
                  }
             },
             {
@@ -65,12 +66,13 @@ export default function Index() {
 return(
     
 <main className='pai pagina'>
+    <Rota/>
 
 
         <header className="header">
             <div className="set-1">
         <a href="../menu">
-            <img src='./images/66822.png' className='img-t'/>
+            <img src='./images/66822.png' alt='seta' className='img-t responsivo-4'/>
             </a>
             </div> 
             <h1 className="titulo">Pedidos</h1>
@@ -80,8 +82,8 @@ return(
        
 
         <div>
-            <input className="barra-pesquisa" type="text" placeholder="Buscar por Nome" value={filtro} onChange={e => setFiltro(e.target.value)}/>
-            <img src='./images/search-free-icon-font.png' className='lupa' alt='buscar' onClick={filtrar}/>
+            <input className="barra-pesquisa responsivo-1" type="text" placeholder="Buscar por Nome" value={filtro} onChange={e => setFiltro(e.target.value)}/>
+            <img src='./images/search-free-icon-font.png' className='lupa responsivo-6' alt='buscar' onClick={filtrar}/>
 
         </div>
 
@@ -89,11 +91,11 @@ return(
             <table>
                 <thead>
                 <tr>
-                    <th>endereço</th>
-                    <th>nome</th>
-                    <th>data</th>
-                    <th>veiculo</th>
-                    <th>ações</th>
+                    <th>Endereço</th>
+                    <th>Nome</th>
+                    <th>Data</th>
+                    <th>Veiculo</th>
+                    <th>Ações</th>
                 </tr>
                 </thead>
 
@@ -105,9 +107,9 @@ return(
                       <td>{item.atendimento.substr(0, 10)}</td>
                       <td>{item.Carro}</td>
                       <td>
-                          <img src='./images/edit-free-icon-font (1).png' className='x' alt='editar' onClick={() => EditarPedido(item.id)} />
+                          <img src='./images/edit-free-icon-font (1).png' className='x certo' alt='editar' onClick={() => EditarPedido(item.id)} />
                           &nbsp; &nbsp; &nbsp;
-                          <img src='./images/cross-free-icon-font (1).png' className='x'alt='remover' onClick={() => RemoverPedido(item.id, item.nome)}  />
+                          <img src='./images/cross-free-icon-font (1).png' className='x errado'alt='remover' onClick={() => RemoverPedido(item.id, item.nome)}  />
                       </td>
                         </tr>
   

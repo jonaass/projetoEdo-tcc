@@ -4,20 +4,38 @@
         display: flex;
         flex-direction: column;
         background-color: #252048;
-        height: 100vh;
-        width: 80%;
+        width: 70%;
         justify-content: flex-start;
+       
     }
     
     .cab{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: #ffffff;
         width: 100%;
-        height: 6em;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         align-items: center;
+    }
+
+    .agendarpedido{
+        font-family: 'font5';
+        font-size: 2em;
+
+    }
+
+    .divagendarpedido{
+        margin-right: 10em;
+    }
+
+    .fonte{
+        font-family: 'font6';
+    }
+
+    .img-1{
+        height: 40px;
+        width: 40px;
     }
 
     .posicionamento{
@@ -27,11 +45,11 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
     }
 
     .imput{
         height: 25px;
+        width: 80em;
     }
     
     h1{
@@ -40,7 +58,6 @@
     }
     
     label{
-        font-family: 'inter-Semibold';
         font-size: 15px;
         color: #ffffff;
     
@@ -54,7 +71,7 @@
     
     .p1{
         display: flex;
-        flex-direction: row;;
+        flex-direction: column;
     }
     
     .imp{
@@ -64,20 +81,20 @@
     }
     
     h2{
-        font-family: 'inter-Semibold';
         font-size: 15px;
         color: #ffffff;
         margin: 0px 6px;
     }
     
     .txtarea{
-        margin: 0px 9px;
-        height: 8em;
+        margin: 10px 9px;
+        height: 3em;
         width: 28em;
     }
     
     .imp2{
-        margin:0px 20px;
+        margin: 20px;
+        font-family: 'font6';
     }
     
     .but{
@@ -87,14 +104,9 @@
         padding-right: 81px;
     }
     
-    button{
-        font-family: 'inter-Semibold';
-        font-size: 15px;
-    }
     .salvar{
         font-size: 15px;
         display: flow-root;
-        font-family: "inter-Semibold";
         height: 63px;
         width: 53px;
     }
@@ -118,20 +130,96 @@
         width: 99%;
     }
 
+    .pos4{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: -1em;
+    }
+
+    .pos45 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-bottom: -1em;
+    }
+
     .pos5{
+        width: 10em;
         height: 25px;
     }
 
-    .posicionamento2{
+    .pos6{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: -6.5em;
+    }
+
+    .sapo{
+        width: 10px;
+        height: 25px;
+    }
+
+    .total{
+        font-family: 'font6';
         align-self: center;
     }
 
-    .but{
-        height: 25px;
+    .div-but{
+        display: flex;
+        justify-content: flex-end;        
+        height: 5px; 
+    }
+
+    .but-1{
+        padding-right: 30px;
+        font-family: 'font5';
+        font-size: 14px;
+        
+    }
+
+    .but-2{
+        font-family: 'font5';
+        font-size: 14px;
+        
+    }
+
+    button{
+        border: none;
+        width: 60px;
+        height: 30px;
     }
     
     .placa{
         text-transform: uppercase;
+    }
+
+@media screen and (max-width:667px) {
+
+        .responsivo{
+            margin: 0px 9px;
+            height: 8em;
+            width: 15em;
+        
+        }
+        .responsivo2 {
+            margin: 0px 9px;
+            height: 8em;
+            width: 14em;
+        
+        }
+        .responsivo-3{
+            width: 51%;
+            margin-left: 63px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        
+        }
+    
     }
 
 }

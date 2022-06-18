@@ -10,15 +10,15 @@ server.post('/pedido' , async (req, resp) =>{
     try {
          const pedido= req.body
 
-         if (!pedido.cliente) {
+         if (!pedido.cliente.trim()) {
             throw new Error('Nome do cliente é obrigatorio!');
         }
 
-        if (!pedido.endereco) {
+        if (!pedido.endereco.trim()) {
             throw new Error('endereço do pedido é obrigatorio!');
         }
 
-        if(!pedido.atendimento){
+        if(!pedido.atendimento.trim()){
           throw new Error ('atendimento do pedido é obrigatorio!')
         }
 
@@ -26,7 +26,7 @@ server.post('/pedido' , async (req, resp) =>{
             throw new Error('telefone do cliente é obrigatorio!');
         }
 
-        if (!pedido.carro) {
+        if (!pedido.carro.trim()) {
             throw new Error('Nome do Carro é obrigatorio!');
         }
 
@@ -34,15 +34,15 @@ server.post('/pedido' , async (req, resp) =>{
             throw new Error('Ano do Carro é obrigatorio!');
         }
 
-        if (!pedido.placa) {
+        if (!pedido.placa.trim()) {
             throw new Error('Placa do Carro é obrigatorio!');
         }
 
-        if (!pedido.problema) {
+        if (!pedido.problema.trim()) {
             throw new Error('problema do Carro é obrigatorio!');
         }
 
-        if (!pedido.pecas) {
+        if (!pedido.pecas.trim()) {
             throw new Error('peças do Carro é obrigatorio!');
         }
 

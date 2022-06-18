@@ -31,6 +31,7 @@ a{
 }
 
 .b1{
+    
     height: 100%;
     width: 100%;
     border: none;
@@ -45,14 +46,19 @@ a{
 }
     
 .Serviço{
-    font-family: "Roboto3";
+    font-family: 'font3';
+    font-size: 2em;
     width: 13em;
     align-self: center;
     margin: -25px;
 }
+
+.fonte{
+    font-family: 'font5';
+    font-size: 2em;
+}
     
 .Agendar{
-    font-family: "Inter";
     background-color: #252048;
     width: 20em;
     height: 6em;
@@ -60,7 +66,6 @@ a{
 }
     
 .Consulta{
-    font-family: "Inter";
     background-color: #252048;
     width: 20em;
     height: 6em;

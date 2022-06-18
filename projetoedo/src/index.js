@@ -22,8 +22,7 @@ root.render(
     <ToastContainer />
     <Routes>
       
-      <Route path='/' element={<App />} />
-      <Route path='/landingpage' element={<Landingpage />} />
+      <Route path='/' element={<Landingpage />} />
       <Route path='/login' element={<Login />} />
       <Route path='/menu' element={<Menu />} />
       <Route path='/consultarpedido' element={<Consultarpedidos />} />

@@ -10,6 +10,7 @@ import { toast } from 'react-toastify'
 
 
 
+
 export default function Index() {
     const [cliente, setCliente] = useState('');
     const [endereco, setEndereco] = useState('');
@@ -53,11 +54,11 @@ export default function Index() {
                 const novoPedido= await cadastrarPedido(cliente, endereco, atendimento, telefone, carro, anoCarro, placa, problema, pecas, orcamento,);
                 
                 setId(novoPedido.id);
-                toast.dark('❤️pedido cadastrado com sucesso');
+                toast.dark('❤️Pedido cadastrado com sucesso');
             }
             else{
                await alterarPedido(id, cliente, endereco, atendimento, telefone, carro, anoCarro, placa, problema, pecas, orcamento,);
-               toast.dark('❤️pedido alterado com sucesso');
+               toast.dark('❤️Pedido alterado com sucesso');
             }
             
 
@@ -91,14 +92,14 @@ export default function Index() {
 
             <header className='cab'>
 
-                <div className='posicionamento'>
+                <div className='posicionamento responsivo-3'>
 
                     <a href="/menu">
-                        <img src='/images/66822.png' width="30" height="30" className='img-1' />
+                        <img src='/images/66822.png' alt='seta' className='img-1' />
                     </a>
 
-                    <div>
-                        <h1>Agendar Pedido</h1>
+                    <div className='divagendarpedido'>
+                        <h1 className='agendarpedido'>Agendar Pedido</h1>
                     </div>
 
                 </div>
@@ -112,15 +113,15 @@ export default function Index() {
 
                         <div className='p1'>
                             <div className='imp , pos1'>
-                                <label for="">
-                                    Nome :
+                                <label className='fonte' for="">
+                                    Nome:
                                 </label>
                                 <input className='imput' type="text" value={cliente} onChange={e => setCliente(e.target.value)} />
                             </div>
 
                             <div className='imp , pos2'>
-                                <label for="">
-                                    Telefone :
+                                <label className='fonte' for="">
+                                    Telefone:
                                 </label>
                                 <input className='imput' type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
                             </div>
@@ -131,8 +132,8 @@ export default function Index() {
                         <div>
 
                             <div className='imp  pos_endereco'>
-                                <label for="">
-                                    Endereço :
+                                <label className='fonte' for="">
+                                    Endereço:
                                 </label>
                                 <input className='imput' type="text" value={endereco} onChange={e => setEndereco(e.target.value)} />
                             </div>
@@ -142,29 +143,29 @@ export default function Index() {
                         <div className='p1'>
 
                             <div className='imp , pos3'>
-                                <label for="">
-                                    Veículo :
+                                <label className='fonte' for="">
+                                    Veículo:
                                 </label>
                                 <input className='imput' type="text" value={carro} onChange={e => setCarro(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
-                                <label for="">
-                                    Ano Veiculo :
+                                <label className='fonte' for="">
+                                    Ano Veiculo:
                                 </label>
                                 <input className='imput' type="date" value={anoCarro} onChange={e => setAnoCarro(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
-                                <label for="">
-                                    Placa :
+                                <label className='fonte' for="">
+                                    Placa:
                                 </label>
                                 <input  type="text"  className='placa imput' value={placa} onChange={e => setPlaca(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
-                                <label for="">
-                                    Data Orçamento :
+                                <label className='fonte' for="">
+                                    Data Orçamento:
                                 </label>
                                 <input className='imput' type="date" value={atendimento} onChange={e => setAtendimento(e.target.value)} />
                             </div>
@@ -176,16 +177,16 @@ export default function Index() {
 
                             <div className='imp pos4'>
                                 <label className='imp2' for="">
-                                    Descrição do serviço :
+                                    Descrição do serviço:
                                 </label>
-                                <textarea className='txtarea ' value={problema} onChange={e => setProblema(e.target.value)} />
+                                <textarea className='txtarea responsivo2 ' value={problema} onChange={e => setProblema(e.target.value)} />
                             </div>
 
-                            <div className='imp'>
+                            <div className='imp pos4'>
                                 <label className='imp2' for="">
-                                    Peças :
+                                    Peças:
                                 </label>
-                                <textarea className='txtarea' value={pecas} onChange={e => setPecas(e.target.value)} />
+                                <textarea className='txtarea  responsivo 'value={pecas} onChange={e => setPecas(e.target.value)} />
                             </div>
 
                         </div>
@@ -193,19 +194,20 @@ export default function Index() {
                         <div >
 
                             <div className='p1'>
-                                <h2 className='posicionamento2'>
-                                    Total R$ :
+                                <h2 className='total'>
+                                    Total R$:
                                 </h2>
                                 <input className='pos5' type="text" value={orcamento} onChange={e => setorcamento(e.target.value)} />
                             </div>
 
                         </div>
 
-                        <div className='but'>
+                        <div className='div-but'>
                             
-                            <button className='but' onClick={salvarClick} > {id === 0 ? 'Salvar' : 'Alterar'}</button> &nbsp; &nbsp;  
-                        
-                            <button className='but' onClick={novoClick}>Limpar</button>
+                            <button className='but-1' onClick={salvarClick} > {id === 0 ? 'Salvar' : 'Alterar'}</button> &nbsp; &nbsp;  
+                            <button className='but-2' onClick={novoClick}>Limpar</button>
+
+                            
 
                         </div>
 
