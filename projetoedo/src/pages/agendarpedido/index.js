@@ -176,17 +176,17 @@ export default function Index() {
                         <div className='p2'>
 
                             <div className='imp pos4'>
-                                <label className='imp2' for="">
+                                <label className='fonte' for="">
                                     Descrição do serviço:
                                 </label>
-                                <textarea className='txtarea responsivo2 ' value={problema} onChange={e => setProblema(e.target.value)} />
+                                <textarea className='txtarea responsivo2 ' cols="30" rows="5" value={problema} onChange={e => setProblema(e.target.value)} />
                             </div>
 
                             <div className='imp pos4'>
-                                <label className='imp2' for="">
+                                <label className='fonte' for="">
                                     Peças:
                                 </label>
-                                <textarea className='txtarea  responsivo 'value={pecas} onChange={e => setPecas(e.target.value)} />
+                                <textarea className='txtarea responsivo '  value={pecas} onChange={e => setPecas(e.target.value)} />
                             </div>
 
                         </div>
