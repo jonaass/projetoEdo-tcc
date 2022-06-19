@@ -123,7 +123,7 @@ export default function Index() {
                                 <label className='fonte' for="">
                                     Telefone:
                                 </label>
-                                <input className='imput' type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
+                                <input className='imput' type="number" value={telefone} onChange={e => setTelefone(e.target.value)} />
                             </div>
 
 

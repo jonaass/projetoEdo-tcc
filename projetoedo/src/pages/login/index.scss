@@ -63,7 +63,7 @@
     
 }
 
-.input{
+.input , .olho{
     font-family: 'font1';
     width: 28em;
     height: 45px;
@@ -190,6 +190,14 @@
   position: relative;
   top: 40px;
   height: 50px;
+}
+
+.aparece{
+  width: 25px;
+  height: 25px;
+  margin-top: -34px;
+  margin-left: 26em;
+  
 }
 
 @media screen and (max-width:667px) {

@@ -91,7 +91,7 @@ return(
             <table>
                 <thead>
                 <tr>
-                    <th>Endereço</th>
+                    <th>Telefone</th>
                     <th>Nome</th>
                     <th>Data</th>
                     <th>Veiculo</th>
@@ -102,7 +102,7 @@ return(
                     <tbody> 
                      {pedidos.map(item =>
                         <tr>
-                      <td>{item.endereco}</td>
+                      <td>{item.telefone}</td>
                       <td>{item.nome}</td>
                       <td>{item.atendimento.substr(0, 10)}</td>
                       <td>{item.Carro}</td>

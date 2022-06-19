@@ -47,7 +47,16 @@ export default function Index() {
 
             }
     }
-    
+
+    function MostraOcultar() {
+        const senha = document.getElementById("senha");
+        if (senha.type === "password") {
+            senha.type = "text";
+        }
+        else
+        senha.type = "password"
+    }
+
 return(
 
     <main className='  sombra'>
@@ -72,8 +81,10 @@ return(
 
                     <p className="esqueceu"> Esqueceu seu nome de usuário? </p>
 
-                    <input type="password" id="imputSenha" placeholder="Senha" required="required" className="input responsivo-3" value={senha} onChange={e => setSenha(e.target.value) }/>
-
+                    <input type="password" id="imputSenha" placeholder="Senha" required="required" className="input responsivo-3" value={senha} onChange={e => setSenha(e.target.value) } id='senha'/>
+                    
+                    <input type="checkbox" onClick={MostraOcultar} id='send' className='aparece'></input>
+                    
                     <p className="esqueceu"> Esqueceu sua senha? </p>
 
                     
