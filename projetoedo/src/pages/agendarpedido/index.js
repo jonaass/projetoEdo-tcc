@@ -95,7 +95,7 @@ export default function Index() {
                 <div className='posicionamento responsivo-3'>
 
                     <a href="/menu">
-                        <img src='/images/66822.png' alt='seta' className='img-1' />
+                        <img src='/images/66822.png' alt='seta' className='img-1 cima' />
                     </a>
 
                     <div className='divagendarpedido'>
@@ -116,14 +116,14 @@ export default function Index() {
                                 <label className='fonte' for="">
                                     Nome:
                                 </label>
-                                <input className='imput' type="text" value={cliente} onChange={e => setCliente(e.target.value)} />
+                                <input className='imput abaixa' type="text" value={cliente} onChange={e => setCliente(e.target.value)} />
                             </div>
 
                             <div className='imp , pos2'>
                                 <label className='fonte' for="">
                                     Telefone:
                                 </label>
-                                <input className='imput' type="number" value={telefone} onChange={e => setTelefone(e.target.value)} />
+                                <input className='imput abaixa' type="number" value={telefone} onChange={e => setTelefone(e.target.value)} />
                             </div>
 
 
@@ -135,7 +135,7 @@ export default function Index() {
                                 <label className='fonte' for="">
                                     Endereço:
                                 </label>
-                                <input className='imput' type="text" value={endereco} onChange={e => setEndereco(e.target.value)} />
+                                <input className='imput abaixa' type="text" value={endereco} onChange={e => setEndereco(e.target.value)} />
                             </div>
 
                         </div>
@@ -146,28 +146,28 @@ export default function Index() {
                                 <label className='fonte' for="">
                                     Veículo:
                                 </label>
-                                <input className='imput' type="text" value={carro} onChange={e => setCarro(e.target.value)} />
+                                <input className='imput abaixa' type="text" value={carro} onChange={e => setCarro(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
                                 <label className='fonte' for="">
                                     Ano Veiculo:
                                 </label>
-                                <input className='imput' type="date" value={anoCarro} onChange={e => setAnoCarro(e.target.value)} />
+                                <input className='imput abaixa' type="date" value={anoCarro} onChange={e => setAnoCarro(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
                                 <label className='fonte' for="">
                                     Placa:
                                 </label>
-                                <input  type="text"  className='placa imput' value={placa} onChange={e => setPlaca(e.target.value)} />
+                                <input  type="text"  className='placa imput abaixa' value={placa} onChange={e => setPlaca(e.target.value)} />
                             </div>
 
                             <div className='imp , pos3'>
                                 <label className='fonte' for="">
                                     Data Orçamento:
                                 </label>
-                                <input className='imput' type="date" value={atendimento} onChange={e => setAtendimento(e.target.value)} />
+                                <input className='imput abaixa' type="date" value={atendimento} onChange={e => setAtendimento(e.target.value)} />
                             </div>
 
                         </div>

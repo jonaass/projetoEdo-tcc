@@ -1,5 +1,5 @@
 .pai{
-    
+    background-color: #252048;
     .main{
         display: flex;
         flex-direction: column;
@@ -143,7 +143,6 @@
         flex-direction: row;
         justify-content: flex-start;
         margin-bottom: -1em;
-    
     }
 
     .pos45 {
@@ -228,6 +227,13 @@
             height: 100%;
         
         }
+        .abaixa{
+            width: 17em;
+        }
+        .cima{
+            margin-left: -124px;
+        }
+        
     
     }
 
