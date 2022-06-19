@@ -173,7 +173,7 @@ export default function Index() {
                         </div>
 
 
-                        <div className='p1'>
+                        <div className='p2'>
 
                             <div className='imp pos4'>
                                 <label className='imp2' for="">
