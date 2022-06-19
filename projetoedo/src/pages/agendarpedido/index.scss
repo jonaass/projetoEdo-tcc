@@ -5,7 +5,7 @@
         flex-direction: column;
         background-color: #252048;
         width: 70%;
-        height: auto;
+        height: 100%;
         justify-content: flex-start;
        
     }
@@ -73,6 +73,7 @@
     .p1{
         display: flex;
         flex-direction: column;
+        height: auto;
     }
     .p2{
         display: flex;
@@ -93,10 +94,12 @@
     
     .txtarea{
         margin: 10px 9px;
-        height: 10em;
-        width: 28em;
+        height: 10vh;
+        max-width: 20em;
+        max-height: 1.5em;
     }
-    
+   
+
     .imp2{
         margin: 20px;
         font-family: 'font6';
@@ -173,11 +176,9 @@
 
     .div-but{
         display: flex;
-        justify-content: flex-end;      
-        background-color: #252048;
+        justify-content: flex-end;
+        height: auto;
         width: 100%;
-        height:100%
-  
     }
 
     .but-1{
