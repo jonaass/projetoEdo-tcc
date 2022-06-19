@@ -59,7 +59,7 @@ export default function Index() {
 
 return(
 
-    <main className='  sombra'>
+    <main className='sombra'>
         <LoadingBar color='#f11946' ref={ref} /> 
 
         <section className='principal'>
@@ -81,9 +81,9 @@ return(
 
                     <p className="esqueceu"> Esqueceu seu nome de usuário? </p>
 
-                    <input type="password" id="imputSenha" placeholder="Senha" required="required" className="input responsivo-3" value={senha} onChange={e => setSenha(e.target.value) } id='senha'/>
+                    <input type="password" id="imputSenha" placeholder="Senha" required="required" className="input responsivo-3" value={senha} onChange={e => setSenha(e.target.value) } Id='senha'/>
                     
-                    <input type="checkbox" onClick={MostraOcultar} id='send' className='aparece'></input>
+                    <input type="checkbox" onClick={MostraOcultar} Id='send' className='aparece'></input>
                     
                     <p className="esqueceu"> Esqueceu sua senha? </p>
 
