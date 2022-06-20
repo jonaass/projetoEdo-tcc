@@ -54,11 +54,11 @@ export default function Index() {
                 const novoPedido= await cadastrarPedido(cliente, endereco, atendimento, telefone, carro, anoCarro, placa, problema, pecas, orcamento,);
                 
                 setId(novoPedido.id);
-                toast.dark('❤️Pedido cadastrado com sucesso');
+                toast.dark('❤️ Pedido cadastrado com sucesso');
             }
             else{
                await alterarPedido(id, cliente, endereco, atendimento, telefone, carro, anoCarro, placa, problema, pecas, orcamento,);
-               toast.dark('❤️Pedido alterado com sucesso');
+               toast.dark('❤️ Pedido alterado com sucesso');
             }
             
 
@@ -114,7 +114,7 @@ export default function Index() {
                         <div className='p1'>
                             <div className='imp , pos1'>
                                 <label className='fonte' for="">
-                                    Nome:
+                                    Nome do Cliente:
                                 </label>
                                 <input className='imput abaixa' type="text" value={cliente} onChange={e => setCliente(e.target.value)} />
                             </div>
@@ -165,7 +165,7 @@ export default function Index() {
 
                             <div className='imp , pos3'>
                                 <label className='fonte' for="">
-                                    Data Orçamento:
+                                    Data do Pedido:
                                 </label>
                                 <input className='imput abaixa' type="date" value={atendimento} onChange={e => setAtendimento(e.target.value)} />
                             </div>

@@ -15,7 +15,7 @@ return(
 
         <div className="texto-cabeçalho">
             <div>
-                <h1>Estufa de ouro</h1> 
+                <h1>Estufa de Ouro</h1> 
             </div>
         </div>
        </div>
@@ -30,7 +30,7 @@ return(
         <div className="faixa1-imagem">
             <div className="faixa1-texto texto-2">
                 <h3 className="faixa1-texto1">
-                    Um carro bem cuidado,
+                    Um carro bem cuidado
                 </h3>
 
                 <h3 className='faixa1-texto2'>
@@ -121,7 +121,7 @@ return(
     <section className="faixa5 respon-3">
         <div className="texto-faixa5">
             <h1 className="titulo5 textor2">Funilaria</h1>
-            <p className="'texto5">O melhor cuidado com os veiculos e com os nossos clientes</p>
+            <p className="'texto5">O melhor cuidado com os veículos e com os nossos clientes</p>
         </div>
 
         <div className="img-faixa5">
@@ -143,7 +143,7 @@ return(
     <section className="faixa7 respon-3">
         <div className="texto-faixa5">
             <h1 className="titulo5 textor">Pintura</h1>
-            <p className="texto5">Tintas de alta qualidade e cuidado e atenção total com o seu veículo</p>
+            <p className="texto5">Tintas de alta qualidade, cuidado e atenção total com o seu veículo</p>
         </div>
 
         <div className="img-faixa5">
