@@ -138,50 +138,51 @@ server.put('/pedidos/:id', async (req,resp) => {
     try {
     const { id } = req.params;
     const pedidos =req.body;
-    
-    if (!pedidos.cliente) {
+
+    if (!pedido.cliente.trim()) {
         throw new Error('Nome do cliente é obrigatorio!');
     }
 
-    if (!pedidos.endereco) {
+    if (!pedido.endereco.trim()) {
         throw new Error('endereço do pedido é obrigatorio!');
     }
 
-    if(!pedidos.atendimento){
+    if(!pedido.atendimento.trim()){
       throw new Error ('atendimento do pedido é obrigatorio!')
     }
 
-    if (!pedidos.telefone) {
+    if (!pedido.telefone.trim()) {
         throw new Error('telefone do cliente é obrigatorio!');
     }
 
-    if (!pedidos.carro) {
+    if (!pedido.carro.trim()) {
         throw new Error('Nome do Carro é obrigatorio!');
     }
 
-    if (!pedidos.anoCarro) {
+    if (!pedido.anoCarro.trim()) {
         throw new Error('Ano do Carro é obrigatorio!');
     }
 
-    if (!pedidos.placa) {
+    if (!pedido.placa.trim()) {
         throw new Error('Placa do Carro é obrigatorio!');
     }
 
-    if (!pedidos.problema) {
+    if (!pedido.problema.trim()) {
         throw new Error('problema do Carro é obrigatorio!');
     }
 
-    if (!pedidos.pecas) {
+    if (!pedido.pecas.trim()) {
         throw new Error('peças do Carro é obrigatorio!');
     }
 
-    if (!pedidos.orcamento) {
+    if (!pedido.orcamento.trim()) {
         throw new Error('orçamento do Carro é obrigatorio!');
     }
 
 const resposta= await AlterarPedido(pedidos, id)
 if (resposta != 1) {
     throw new Error ('Burro kkk');
+
 }
 
 else{
