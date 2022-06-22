@@ -198,7 +198,8 @@ return(
         <div className="bloco2-rodape">
             <h1 className="titulo-mapa lado">Onde nos encontrar:</h1>
 
-            <img  className="bloco2-img mapa"src="./images/mapa.png" alt=""/>
+            <a className="bloco2-img" href="https://www.google.com/maps/place/Rua+Tenente+Joecyl+Camargo+da+Mota+-+Jardim+Somara,+S%C3%A3o+Paulo+-+SP,+04845-040/@-23.7486502,-46.6928776,20z/data=!4m5!3m4!1s0x94ce4f39ce70ddab:0x2766918cf36aedec!8m2!3d-23.7486668!4d-46.6925946"></a>
+
         </div>
     </section>
 </body>
